@@ -1,0 +1,443 @@
+<!DOCTYPE html><html class="light" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-container": "#54647a",
+                      "primary": "#004ac6",
+                      "primary-fixed-dim": "#b4c5ff",
+                      "surface-variant": "#d8e3fb",
+                      "error": "#ba1a1a",
+                      "surface-bright": "#f9f9ff",
+                      "on-primary-fixed-variant": "#003ea8",
+                      "on-secondary-fixed": "#0b1c30",
+                      "inverse-surface": "#263143",
+                      "tertiary-fixed-dim": "#c4c7c9",
+                      "surface-container-high": "#dee8ff",
+                      "primary-fixed": "#dbe1ff",
+                      "on-background": "#111c2d",
+                      "surface-container": "#e7eeff",
+                      "outline-variant": "#c3c6d7",
+                      "primary-container": "#2563eb",
+                      "on-error-container": "#93000a",
+                      "on-error": "#ffffff",
+                      "secondary-container": "#d0e1fb",
+                      "inverse-primary": "#b4c5ff",
+                      "on-tertiary-fixed": "#191c1e",
+                      "on-primary-fixed": "#00174b",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-container": "#eff1f3",
+                      "tertiary-fixed": "#e0e3e5",
+                      "surface-container-highest": "#d8e3fb",
+                      "surface-tint": "#0053db",
+                      "on-surface-variant": "#434655",
+                      "secondary-fixed": "#d3e4fe",
+                      "surface": "#f9f9ff",
+                      "secondary": "#505f76",
+                      "on-primary": "#ffffff",
+                      "tertiary": "#525657",
+                      "on-secondary-fixed-variant": "#38485d",
+                      "on-surface": "#111c2d",
+                      "on-secondary": "#ffffff",
+                      "on-primary-container": "#eeefff",
+                      "on-tertiary": "#ffffff",
+                      "on-tertiary-fixed-variant": "#444749",
+                      "surface-container-low": "#f0f3ff",
+                      "secondary-fixed-dim": "#b7c8e1",
+                      "inverse-on-surface": "#ecf1ff",
+                      "surface-dim": "#cfdaf2",
+                      "background": "#f9f9ff",
+                      "outline": "#737686",
+                      "tertiary-container": "#6b6e70",
+                      "error-container": "#ffdad6"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "2xl": "1rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "stack-gap-lg": "32px",
+                      "stack-gap-md": "20px",
+                      "base": "4px",
+                      "gutter": "16px",
+                      "sidebar-width": "280px",
+                      "navbar-height": "72px",
+                      "stack-gap-sm": "12px",
+                      "container-padding": "24px"
+              },
+              "fontFamily": {
+                      "body-sm": ["Poppins"],
+                      "label-md": ["Poppins"],
+                      "display-lg": ["Poppins"],
+                      "body-base": ["Poppins"],
+                      "label-sm": ["Poppins"],
+                      "headline-md": ["Poppins"],
+                      "title-lg": ["Poppins"],
+                      "display-lg-mobile": ["Poppins"]
+              },
+              "fontSize": {
+                      "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                      "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+                      "display-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-base": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                      "display-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+    }catch(_e){}</script>    <script src="storage.js"></script>
+</head><body class="bg-background text-on-surface">
+    <!-- SIDE BAR NAVIGATION -->
+    <aside class="fixed left-0 top-0 h-full w-[280px] bg-inverse-surface dark:bg-inverse-surface shadow-md hidden lg:flex flex-col z-50" id="main-sidebar">
+        <div class="p-6 flex flex-col gap-2">
+            <div class="text-white text-title-lg font-title-lg font-bold">UniLibrary</div>
+            <div class="text-on-secondary-container text-label-sm font-label-sm opacity-80">LMS Admin v1.2</div>
+        </div>
+        <nav class="mt-4 flex-grow flex flex-col px-4 gap-1">
+            <a class="flex items-center gap-3 bg-primary/10 border-l-4 border-primary text-primary-fixed-dim py-3 px-4 transition-all-custom rounded-r-lg" href="index.html">
+                <span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+                <span class="text-label-md font-label-md">Dashboard</span>
+            </a>
+            <a class="flex items-center gap-3 text-on-secondary-container dark:text-surface-variant py-3 px-4 hover:bg-primary/10 hover:text-primary-fixed-dim transition-all-custom rounded-lg" href="books.html">
+                <span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+                <span class="text-label-md font-label-md">Books</span>
+            </a>
+            <a class="flex items-center gap-3 text-on-secondary-container dark:text-surface-variant py-3 px-4 hover:bg-primary/10 hover:text-primary-fixed-dim transition-all-custom rounded-lg" href="students.html">
+                <span class="material-symbols-outlined" data-icon="group">group</span>
+                <span class="text-label-md font-label-md">Students</span>
+            </a>
+            <a class="flex items-center gap-3 text-on-secondary-container dark:text-surface-variant py-3 px-4 hover:bg-primary/10 hover:text-primary-fixed-dim transition-all-custom rounded-lg" href="issue.html">
+                <span class="material-symbols-outlined" data-icon="assignment_turned_in">assignment_turned_in</span>
+                <span class="text-label-md font-label-md">Issue Book</span>
+            </a>
+            <a class="flex items-center gap-3 text-on-secondary-container dark:text-surface-variant py-3 px-4 hover:bg-primary/10 hover:text-primary-fixed-dim transition-all-custom rounded-lg" href="return.html">
+                <span class="material-symbols-outlined" data-icon="assignment_return">assignment_return</span>
+                <span class="text-label-md font-label-md">Return Book</span>
+            </a>
+            <a class="mt-auto flex items-center gap-3 text-on-secondary-container dark:text-surface-variant py-3 px-4 hover:bg-primary/10 hover:text-primary-fixed-dim transition-all-custom rounded-lg" href="settings.html">
+                <span class="material-symbols-outlined" data-icon="settings">settings</span>
+                <span class="text-label-md font-label-md">Settings</span>
+            </a>
+        </nav>
+        <div class="p-4 border-t border-white/10 flex items-center gap-3">
+            <img class="w-10 h-10 rounded-full border-2 border-primary-container object-cover" alt="University Librarian" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAEBGZ_nN-EAxvv9e7zmRy3dgQ_nrfW80rpPjd8H4zZ2OVEccW7oIomkp-PZtUUBl_ZaMaWmkxvM7-PQdH2ZyYsJq5_NUAw3A6175Lak7Qb8wNfPAX_eHMTSlfxZ9-C8XUddwUss2qeFpckR2kVyYM3h31RCRvhWVHctt0L9Cv5g8AUD27R7Y_OwyxXey9XiKTqelB8_kBajgUjm2wnWgHyIJ62ob-6RhEwh73VoiEWzzKz0U-EEqSWg_XVFfBCHx_A2Tm0mxLdzg">
+            <div class="flex flex-col">
+                <span class="text-label-md font-label-md text-white" id="sidebar-profile-name">University Librarian</span>
+                <span class="text-label-sm font-label-sm text-white/60" id="sidebar-profile-role">Administrator</span>
+            </div>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT WRAPPER -->
+    <div class="lg:ml-[280px] min-h-screen flex flex-col">
+        <!-- TOP NAVIGATION BAR -->
+        <header class="flex justify-between items-center px-gutter w-full sticky top-0 z-40 bg-surface/80 backdrop-blur-md h-[72px] border-b border-outline-variant">
+            <div class="flex items-center gap-4 flex-grow max-w-2xl">
+                <div class="lg:hidden">
+                    <button class="p-2 text-primary hover:bg-primary/5 rounded-full transition-all">
+                        <span class="material-symbols-outlined" data-icon="menu">menu</span>
+                    </button>
+                </div>
+                <div class="text-title-lg font-title-lg font-bold text-primary dark:text-primary-fixed-dim">Academic Resource Center</div>
+                <div class="hidden md:flex flex-grow ml-8 max-w-md bg-surface-container-low rounded-full px-4 py-2 items-center gap-2 group focus-within:ring-2 focus-within:ring-primary transition-all">
+                    <span class="material-symbols-outlined text-outline" data-icon="search">search</span>
+                    <input class="bg-transparent border-none focus:ring-0 text-body-sm font-body-sm w-full" placeholder="Search resources, books, or students..." type="text">
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <button class="p-2 text-on-surface-variant hover:bg-surface-container-low rounded-full transition-all-custom active:opacity-80">
+                    <span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+                </button>
+                <button class="p-2 text-on-surface-variant hover:bg-surface-container-low rounded-full transition-all-custom active:opacity-80">
+                    <span class="material-symbols-outlined" data-icon="help_outline">help_outline</span>
+                </button>
+                <div class="h-8 w-px bg-outline-variant mx-1"></div>
+                <div class="flex items-center gap-3 pl-2 h-full">
+                    <div class="text-right hidden sm:block">
+                        <p class="text-label-md font-label-md text-on-surface leading-tight" id="header-profile-name">University Librarian</p>
+                        <p class="text-label-sm font-label-sm text-on-surface-variant leading-tight" id="header-profile-role">Administrator</p>
+                    </div>
+                    <img class="w-10 h-10 rounded-full border-2 border-primary-container object-cover cursor-pointer hover:opacity-90 transition-all" data-alt="University librarian profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAEBGZ_nN-EAxvv9e7zmRy3dgQ_nrfW80rpPjd8H4zZ2OVEccW7oIomkp-PZtUUBl_ZaMaWmkxvM7-PQdH2ZyYsJq5_NUAw3A6175Lak7Qb8wNfPAX_eHMTSlfxZ9-C8XUddwUss2qeFpckR2kVyYM3h31RCRvhWVHctt0L9Cv5g8AUD27R7Y_OwyxXey9XiKTqelB8_kBajgUjm2wnWgHyIJ62ob-6RhEwh73VoiEWzzKz0U-EEqSWg_XVFfBCHx_A2Tm0mxLdzg">
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN DASHBOARD CONTENT -->
+        <main class="flex-grow p-gutter md:p-stack-gap-lg overflow-x-hidden">
+            <!-- WELCOME BANNER -->
+            <section class="mb-stack-gap-lg fade-in-up" style="animation-delay: 0.1s;">
+                <div class="relative w-full rounded-2xl overflow-hidden bg-gradient-to-r from-primary to-primary-container p-8 md:p-12 text-white shadow-xl">
+                    <div class="relative z-10">
+                        <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-2">Welcome back, Librarian!</h1>
+                        <p class="text-body-base font-body-base opacity-90 max-w-xl">University Library Management System is synchronized and running optimally. Check your daily queue and latest inventory updates below.</p>
+                        <div class="mt-6 flex gap-3">
+                            <button class="px-6 py-2 bg-white text-primary font-label-md rounded-lg shadow-sm hover:bg-surface-container transition-all-custom hover:scale-105 active:scale-95" onclick="window.print()">Generate Report</button>
+                            <button class="px-6 py-2 bg-primary-container border border-white/30 text-white font-label-md rounded-lg hover:bg-white/10 transition-all-custom hover:scale-105 active:scale-95 hover:shadow-md" onclick="window.location.href='books.html'">Manage Books</button>
+                        </div>
+                    </div>
+                    <!-- Subtle abstract background element -->
+                    <div class="absolute right-[-5%] top-[-10%] opacity-10">
+                        <span class="material-symbols-outlined text-[320px] rotate-12" data-icon="auto_stories">auto_stories</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- STATS GRID -->
+            <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter mb-stack-gap-lg gap-stack-gap-md">
+                <!-- Card 1 -->
+                <div class="bg-surface-container-lowest p-6 rounded-2xl shadow-[0_25px_50px_-12px_rgba(0,0,0,0.05)] flex flex-col gap-2 hover:translate-y-[-4px] transition-all-custom fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="flex justify-between items-start">
+                        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined" data-icon="library_books">library_books</span>
+                        </div>
+                        <span class="text-green-600 bg-green-50 px-2 py-1 rounded text-label-sm font-label-sm">+12%</span>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-on-surface-variant text-label-sm font-label-sm">Total Books</p>
+                        <h3 class="text-title-lg font-title-lg text-on-surface" id="stat-total-books">0</h3>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-surface-container-lowest p-6 rounded-2xl shadow-[0_25px_50px_-12px_rgba(0,0,0,0.05)] flex flex-col gap-2 hover:translate-y-[-4px] transition-all-custom fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="flex justify-between items-start">
+                        <div class="w-12 h-12 bg-secondary-container/30 rounded-xl flex items-center justify-center text-secondary">
+                            <span class="material-symbols-outlined" data-icon="school">school</span>
+                        </div>
+                        <span class="text-blue-600 bg-blue-50 px-2 py-1 rounded text-label-sm font-label-sm">+4%</span>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-on-surface-variant text-label-sm font-label-sm">Total Students</p>
+                        <h3 class="text-title-lg font-title-lg text-on-surface" id="stat-total-students">0</h3>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-surface-container-lowest p-6 rounded-2xl shadow-[0_25px_50px_-12px_rgba(0,0,0,0.05)] flex flex-col gap-2 hover:translate-y-[-4px] transition-all-custom fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="flex justify-between items-start">
+                        <div class="w-12 h-12 bg-error-container/30 rounded-xl flex items-center justify-center text-error">
+                            <span class="material-symbols-outlined" data-icon="outbound">outbound</span>
+                        </div>
+                        <span class="text-error bg-error/10 px-2 py-1 rounded text-label-sm font-label-sm">Active</span>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-on-surface-variant text-label-sm font-label-sm">Issued Books</p>
+                        <h3 class="text-title-lg font-title-lg text-on-surface" id="stat-issued-books">0</h3>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-surface-container-lowest p-6 rounded-2xl shadow-[0_25px_50px_-12px_rgba(0,0,0,0.05)] flex flex-col gap-2 hover:translate-y-[-4px] transition-all-custom fade-in-up" style="animation-delay: 0.5s;">
+                    <div class="flex justify-between items-start">
+                        <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-green-700">
+                            <span class="material-symbols-outlined" data-icon="assignment_returned">assignment_returned</span>
+                        </div>
+                        <span class="text-green-700 bg-green-50 px-2 py-1 rounded text-label-sm font-label-sm">Today</span>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-on-surface-variant text-label-sm font-label-sm">Returned Today</p>
+                        <h3 class="text-title-lg font-title-lg text-on-surface" id="stat-returned-today">0</h3>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ASYMMETRIC CONTENT GRID -->
+            <section class="grid grid-cols-1 lg:grid-cols-12 gap-stack-gap-lg">
+                <!-- RECENT ACTIVITY (8 Cols) -->
+                <div class="lg:col-span-8 bg-surface-container-lowest rounded-2xl shadow-[0_25px_50px_-12px_rgba(0,0,0,0.05)] p-6 fade-in-up" style="animation-delay: 0.6s;">
+                    <div class="flex justify-between items-center mb-6">
+                        <h2 class="text-headline-md font-headline-md text-on-surface">Recent Activity</h2>
+                        <button class="text-primary text-label-md font-label-md hover:underline transition-all">View All Logs</button>
+                    </div>
+                    <div class="flex flex-col gap-4" id="activity-list">
+                        <!-- Activity items will be injected here by dashboard-specific JS -->
+                    </div>
+                </div>
+                <!-- QUICK ACTIONS / INFO (4 Cols) -->
+                <div class="lg:col-span-4 flex flex-col gap-stack-gap-lg fade-in-up" style="animation-delay: 0.7s;">
+                    <!-- Analytics Summary -->
+                    <div class="bg-surface-container p-6 rounded-2xl shadow-sm border border-outline-variant hover:shadow-md transition-all-custom">
+                        <h3 class="text-title-lg font-title-lg text-on-surface mb-4">Inventory Health</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-label-sm font-label-sm text-on-surface-variant">Available Stock</span>
+                                    <span class="text-label-sm font-label-sm text-on-surface font-bold">85%</span>
+                                </div>
+                                <div class="w-full bg-outline-variant h-2 rounded-full overflow-hidden">
+                                    <div class="bg-primary h-full w-[85%] rounded-full"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-label-sm font-label-sm text-on-surface-variant">Overdue Returns</span>
+                                    <span class="text-label-sm font-label-sm text-error font-bold">12%</span>
+                                </div>
+                                <div class="w-full bg-outline-variant h-2 rounded-full overflow-hidden">
+                                    <div class="bg-error h-full w-[12%] rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Campus Map Placeholder -->
+                    <div class="relative h-64 rounded-2xl overflow-hidden shadow-sm group">
+                        <div class="absolute inset-0 bg-black/20 z-10 group-hover:bg-black/10 transition-all duration-500"></div>
+                        <div class="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-110" data-location="University Campus Library" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBS351RgUDzhJez388omMmX--T6WLqUiz27vQdDJfmqaSeB_A9JCUQl4SqjESU2kOVnEvLpm-IulERXWGcnPwedUfaGVe5n_tXsr3DGzXBEqtGczqwiiOAXei-UXWOP909sIV6BYYThJF_q3sDq4pD_tn5uKDTyS-Ed9BCXUhsjFl5oTknGbWfZAu2yEZu4KXvkcRa_w0HIUcnovx2sw4BfW9swOtgR9_j6V0e6pTNxd19oaWqri8HvKvHNAu08pqGLsSj0jgVngws')"></div>
+                        <div class="absolute bottom-4 left-4 z-20">
+                            <p class="text-white font-label-md bg-black/40 backdrop-blur-md px-3 py-1 rounded-lg">Campus Main Library</p>
+                        </div>
+                        <div class="absolute top-4 right-4 z-20">
+                            <button class="bg-white p-2 rounded-full shadow-md text-primary hover:scale-110 active:scale-95 transition-transform">
+                                <span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="flex justify-between items-center px-gutter py-4 mt-auto bg-surface-container-lowest border-t border-outline-variant">
+            <div class="text-on-surface text-label-md font-label-md font-bold">UniLibrary</div>
+            <div class="text-on-surface-variant text-label-sm font-label-sm">© 2024 UniLibrary System. All Rights Reserved.</div>
+            <div class="hidden sm:flex gap-4">
+                <a class="text-on-surface-variant text-label-sm font-label-sm hover:text-primary transition-colors" href="#">v1.2.4</a>
+                <a class="text-on-surface-variant text-label-sm font-label-sm hover:text-primary transition-colors" href="#">Documentation</a>
+                <a class="text-on-surface-variant text-label-sm font-label-sm hover:text-primary transition-colors" href="#">Support</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- DASHBOARD SPECIFIC LOGIC -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Apply a custom profile name/role (set on the Settings page) if one is saved.
+            const savedProfile = JSON.parse(localStorage.getItem('unilibrary_profile') || 'null');
+            if (savedProfile) {
+                const nameEl1 = document.getElementById('sidebar-profile-name');
+                const roleEl1 = document.getElementById('sidebar-profile-role');
+                const nameEl2 = document.getElementById('header-profile-name');
+                const roleEl2 = document.getElementById('header-profile-role');
+                if (nameEl1) nameEl1.textContent = savedProfile.name;
+                if (roleEl1) roleEl1.textContent = savedProfile.role;
+                if (nameEl2) nameEl2.textContent = savedProfile.name;
+                if (roleEl2) roleEl2.textContent = savedProfile.role;
+            }
+
+            // Shared storage: same keys/shapes as books.html, students.html, issue.html and return.html
+            // so data entered on one page is instantly visible here too.
+            const LIB_KEYS = { BOOKS: 'unilibrary_books', STUDENTS: 'unilibrary_students', ISSUED: 'unilibrary_issued', STATS: 'unilibrary_stats' };
+
+            if (!localStorage.getItem(LIB_KEYS.BOOKS)) {
+                localStorage.setItem(LIB_KEYS.BOOKS, JSON.stringify([
+                    { id: 'LIB-1001', title: 'Introduction to Algorithms', author: 'Thomas H. Cormen', category: 'Computer Science', quantity: 12 },
+                    { id: 'LIB-1002', title: 'The Art of Computer Programming', author: 'Donald Knuth', category: 'Computer Science', quantity: 5 },
+                    { id: 'LIB-1003', title: 'Calculus: Early Transcendentals', author: 'James Stewart', category: 'Mathematics', quantity: 20 },
+                    { id: 'LIB-1004', title: 'University Physics', author: 'Hugh D. Young', category: 'Physics', quantity: 15 },
+                    { id: 'LIB-1005', title: 'Clean Code', author: 'Robert C. Martin', category: 'Computer Science', quantity: 8 },
+                    { id: 'LIB-1006', title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', category: 'Literature', quantity: 25 }
+                ]));
+            }
+            if (!localStorage.getItem(LIB_KEYS.STUDENTS)) {
+                localStorage.setItem(LIB_KEYS.STUDENTS, JSON.stringify([
+                    { id: 'STU-2024-001', name: 'Alexander Pierce', department: 'Computer Science', semester: 6, phone: '+1-555-0101' },
+                    { id: 'STU-2024-042', name: 'Sarah Jenkins', department: 'Business Admin', semester: 4, phone: '+1-555-0212' },
+                    { id: 'STU-2023-118', name: 'David Chen', department: 'Engineering', semester: 8, phone: '+1-555-0345' },
+                    { id: 'STU-2024-055', name: 'Emily Watson', department: 'Arts & Design', semester: 2, phone: '+1-555-0567' }
+                ]));
+            }
+            if (!localStorage.getItem(LIB_KEYS.ISSUED)) {
+                localStorage.setItem(LIB_KEYS.ISSUED, JSON.stringify([
+                    { id: 'TX-8821', studentId: 'STU-2024-001', studentName: 'Alexander Pierce', bookId: 'LIB-1006', bookTitle: 'The Great Gatsby', issueDate: '2023-10-12', dueDate: '2023-10-26', status: 'Overdue' },
+                    { id: 'TX-8845', studentId: 'STU-2024-042', studentName: 'Sarah Jenkins', bookId: 'LIB-1001', bookTitle: 'Introduction to Algorithms', issueDate: '2023-11-01', dueDate: '2023-11-15', status: 'Issued' },
+                    { id: 'TX-8902', studentId: 'STU-2023-118', studentName: 'David Chen', bookId: 'LIB-1005', bookTitle: 'Clean Code', issueDate: '2023-11-05', dueDate: '2023-11-19', status: 'Issued' }
+                ]));
+            }
+            if (!localStorage.getItem(LIB_KEYS.STATS)) {
+                localStorage.setItem(LIB_KEYS.STATS, JSON.stringify({ returnedToday: 28 }));
+            }
+
+            // Recent Activity is illustrative (kept from the original design) since it isn't
+            // derived from the CRUD pages' data.
+            const DEMO_ACTIVITIES = [
+                { id: 1, type: 'borrow', user: 'Alex Johnson', book: 'The Great Gatsby', time: '10 mins ago', avatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&h=100&fit=crop' },
+                { id: 2, type: 'return', user: 'Maria Garcia', book: 'Quantum Physics Intro', time: '25 mins ago', avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop' },
+                { id: 3, type: 'borrow', user: 'James Smith', book: 'A Tale of Two Cities', time: '42 mins ago', avatar: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&h=100&fit=crop' },
+                { id: 4, type: 'warning', user: 'System', book: 'Late Return Policy Update', time: '1 hour ago', icon: 'info' },
+                { id: 5, type: 'borrow', user: 'Sarah Wilson', book: 'Organic Chemistry II', time: '2 hours ago', avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop' }
+            ];
+
+            function updateDashboard() {
+                // Stats are computed live from the same data books.html/students.html/issue.html/return.html write to.
+                const books = JSON.parse(localStorage.getItem(LIB_KEYS.BOOKS)) || [];
+                const students = JSON.parse(localStorage.getItem(LIB_KEYS.STUDENTS)) || [];
+                const issued = JSON.parse(localStorage.getItem(LIB_KEYS.ISSUED)) || [];
+                const stats = JSON.parse(localStorage.getItem(LIB_KEYS.STATS)) || { returnedToday: 0 };
+
+                const storedData = {
+                    stats: {
+                        totalBooks: books.reduce((sum, b) => sum + (parseInt(b.quantity) || 0), 0),
+                        totalStudents: students.length,
+                        issuedBooks: issued.length,
+                        returnedToday: stats.returnedToday || 0
+                    },
+                    activities: JSON.parse(localStorage.getItem('unilibrary_activities')) || DEMO_ACTIVITIES
+                };
+
+                // Update Stats with simple count-up feel if desired, here just direct update
+                if (storedData.stats) {
+                    document.getElementById('stat-total-books').textContent = storedData.stats.totalBooks.toLocaleString();
+                    document.getElementById('stat-total-students').textContent = storedData.stats.totalStudents.toLocaleString();
+                    document.getElementById('stat-issued-books').textContent = storedData.stats.issuedBooks.toLocaleString();
+                    document.getElementById('stat-returned-today').textContent = storedData.stats.returnedToday.toLocaleString();
+                }
+
+                // Render Dynamic Activity List
+                const listContainer = document.getElementById('activity-list');
+                if (listContainer && storedData.activities) {
+                    listContainer.innerHTML = '';
+                    storedData.activities.forEach((act, index) => {
+                        const item = document.createElement('div');
+                        item.className = 'flex items-center gap-4 p-4 rounded-xl hover:bg-surface-container-low transition-all-custom group border border-transparent hover:border-outline-variant';
+                        
+                        let iconHtml = '';
+                        if (act.avatar) {
+                            iconHtml = `<img src="${act.avatar}" class="w-10 h-10 rounded-full object-cover">`;
+                        } else {
+                            iconHtml = `<div class="w-10 h-10 bg-secondary-container rounded-full flex items-center justify-center text-secondary">
+                                            <span class="material-symbols-outlined text-sm" data-icon="${act.icon || 'notifications'}">${act.icon || 'notifications'}</span>
+                                        </div>`;
+                        }
+
+                        let badgeColor = 'text-primary bg-primary/10';
+                        if (act.type === 'return') badgeColor = 'text-green-600 bg-green-100';
+                        if (act.type === 'warning') badgeColor = 'text-error bg-error-container';
+
+                        item.innerHTML = `
+                            <div class="shrink-0">${iconHtml}</div>
+                            <div class="flex-grow">
+                                <p class="text-body-base font-body-base text-on-surface">
+                                    <span class="font-semibold">${act.user}</span> 
+                                    ${act.type === 'borrow' ? 'borrowed' : act.type === 'return' ? 'returned' : 'received'} 
+                                    <span class="font-medium text-primary cursor-pointer hover:underline">${act.book}</span>
+                                </p>
+                                <p class="text-label-sm font-label-sm text-on-surface-variant opacity-70">${act.time}</p>
+                            </div>
+                            <div class="hidden sm:block shrink-0">
+                                <span class="px-3 py-1 rounded-full text-[11px] font-bold capitalize ${badgeColor}">${act.type}</span>
+                            </div>
+                        `;
+                        listContainer.appendChild(item);
+                    });
+                }
+            }
+
+            window.updateDashboard = updateDashboard;
+            updateDashboard();
+        });
+    </script>
+</body></html>

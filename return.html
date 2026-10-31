@@ -1,0 +1,411 @@
+<!DOCTYPE html><html class="light" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "primary-fixed-dim": "#b4c5ff",
+                "secondary-fixed-dim": "#b7c8e1",
+                "on-tertiary-fixed-variant": "#444749",
+                "on-error": "#ffffff",
+                "primary-container": "#2563eb",
+                "on-primary-fixed": "#00174b",
+                "on-background": "#111c2d",
+                "surface-container-high": "#dee8ff",
+                "surface-container-low": "#f0f3ff",
+                "primary": "#004ac6",
+                "error": "#ba1a1a",
+                "on-tertiary": "#ffffff",
+                "surface-container-lowest": "#ffffff",
+                "surface-container": "#e7eeff",
+                "on-error-container": "#93000a",
+                "tertiary-fixed": "#e0e3e5",
+                "on-surface": "#111c2d",
+                "surface": "#f9f9ff",
+                "surface-variant": "#d8e3fb",
+                "on-surface-variant": "#434655",
+                "inverse-surface": "#263143",
+                "on-primary-container": "#eeefff",
+                "inverse-on-surface": "#ecf1ff",
+                "on-tertiary-container": "#eff1f3",
+                "on-secondary-container": "#54647a",
+                "primary-fixed": "#dbe1ff",
+                "on-secondary": "#ffffff",
+                "on-tertiary-fixed": "#191c1e",
+                "on-secondary-fixed": "#0b1c30",
+                "on-primary-fixed-variant": "#003ea8",
+                "tertiary-fixed-dim": "#c4c7c9",
+                "secondary-container": "#d0e1fb",
+                "inverse-primary": "#b4c5ff",
+                "outline": "#737686",
+                "surface-dim": "#cfdaf2",
+                "secondary-fixed": "#d3e4fe",
+                "surface-tint": "#0053db",
+                "outline-variant": "#c3c6d7",
+                "tertiary-container": "#6b6e70",
+                "secondary": "#505f76",
+                "on-secondary-fixed-variant": "#38485d",
+                "background": "#f9f9ff",
+                "surface-bright": "#f9f9ff",
+                "on-primary": "#ffffff",
+                "surface-container-highest": "#d8e3fb",
+                "tertiary": "#525657",
+                "error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "2xl": "1rem",
+                "3xl": "1.5rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "stack-gap-md": "20px",
+                "base": "4px",
+                "stack-gap-lg": "32px",
+                "navbar-height": "72px",
+                "sidebar-width": "280px",
+                "gutter": "16px",
+                "stack-gap-sm": "12px",
+                "container-padding": "24px"
+            },
+            "fontFamily": {
+                "body-sm": ["Poppins"],
+                "label-md": ["Poppins"],
+                "display-lg": ["Poppins"],
+                "body-base": ["Poppins"],
+                "label-sm": ["Poppins"],
+                "headline-md": ["Poppins"],
+                "title-lg": ["Poppins"],
+                "display-lg-mobile": ["Poppins"]
+            },
+            "fontSize": {
+                "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+                "display-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "body-base": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                "display-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}]
+            }
+          }
+        }
+      }
+    }catch(_e){}</script>    <script src="storage.js"></script>
+</head><body class="bg-background text-on-background">
+    <!-- SideNavBar Shell -->
+    <aside class="hidden lg:flex flex-col h-screen fixed left-0 top-0 w-[280px] bg-inverse-surface dark:bg-inverse-surface shadow-md z-50">
+        <div class="p-6 flex flex-col gap-2">
+            <span class="text-title-lg font-title-lg font-bold text-white">UniLibrary</span>
+            <span class="text-on-secondary-container text-label-sm font-label-sm opacity-80">LMS Admin v1.2</span>
+        </div>
+        <nav class="flex-1 flex flex-col px-4 mt-4 gap-1"><a class="flex items-center gap-3 text-on-secondary-container dark:text-surface-variant py-3 px-4 hover:bg-primary/5 hover:text-primary transition-colors duration-200" href="index.html"><span class="material-symbols-outlined">dashboard</span><span class="text-label-md font-label-md">Dashboard</span></a><a class="flex items-center gap-3 text-on-secondary-container dark:text-surface-variant py-3 px-4 hover:bg-primary/5 hover:text-primary transition-colors duration-200" href="books.html"><span class="material-symbols-outlined">menu_book</span><span class="text-label-md font-label-md">Books</span></a><a class="flex items-center gap-3 text-on-secondary-container dark:text-surface-variant py-3 px-4 hover:bg-primary/5 hover:text-primary transition-colors duration-200" href="students.html"><span class="material-symbols-outlined">group</span><span class="text-label-md font-label-md">Students</span></a><a class="flex items-center gap-3 text-on-secondary-container dark:text-surface-variant py-3 px-4 hover:bg-primary/5 hover:text-primary transition-colors duration-200" href="issue.html"><span class="material-symbols-outlined">assignment_turned_in</span><span class="text-label-md font-label-md">Issue Book</span></a><a class="flex items-center gap-3 bg-primary/10 border-l-4 border-primary text-primary-fixed-dim py-3 px-4" href="return.html"><span class="material-symbols-outlined">assignment_return</span><span class="text-label-md font-label-md">Return Book</span></a><a class="mt-auto flex items-center gap-3 text-on-secondary-container dark:text-surface-variant py-3 px-4 hover:bg-primary/5 hover:text-primary transition-colors duration-200" href="settings.html"><span class="material-symbols-outlined">settings</span><span class="text-label-md font-label-md">Settings</span></a></nav>
+        <div class="p-4 border-t border-white/10 flex items-center gap-3">
+            <img class="w-10 h-10 rounded-full border-2 border-primary-container object-cover" alt="University Librarian" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAEBGZ_nN-EAxvv9e7zmRy3dgQ_nrfW80rpPjd8H4zZ2OVEccW7oIomkp-PZtUUBl_ZaMaWmkxvM7-PQdH2ZyYsJq5_NUAw3A6175Lak7Qb8wNfPAX_eHMTSlfxZ9-C8XUddwUss2qeFpckR2kVyYM3h31RCRvhWVHctt0L9Cv5g8AUD27R7Y_OwyxXey9XiKTqelB8_kBajgUjm2wnWgHyIJ62ob-6RhEwh73VoiEWzzKz0U-EEqSWg_XVFfBCHx_A2Tm0mxLdzg">
+            <div class="flex flex-col">
+                <span class="text-label-md font-label-md text-white" id="sidebar-profile-name">University Librarian</span>
+                <span class="text-label-sm font-label-sm text-white/60" id="sidebar-profile-role">Administrator</span>
+            </div>
+        </div>
+    </aside>
+
+    <!-- TopNavBar Shell -->
+    <nav class="flex justify-between items-center px-gutter w-full sticky top-0 z-40 bg-surface/80 backdrop-blur-md h-[72px] lg:pl-[304px] border-b border-outline-variant">
+        <div class="flex items-center gap-4 flex-1">
+            <div class="relative w-full max-w-md hidden md:block">
+                <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+                <input class="w-full pl-10 pr-4 py-2 bg-surface-container-low rounded-2xl border-none focus:ring-2 focus:ring-primary text-body-base" placeholder="Search resources..." type="text">
+            </div>
+            <span class="lg:hidden text-title-lg font-title-lg font-bold text-primary">UniLibrary</span>
+        </div>
+        <div class="flex items-center gap-6">
+            <span class="hidden md:block text-title-lg font-title-lg font-bold text-primary">Academic Resource Center</span>
+            <div class="flex items-center gap-4">
+                <button class="p-2 hover:bg-surface-container-low rounded-full transition-all text-on-surface-variant active:opacity-80">
+                    <span class="material-symbols-outlined" data-original-icon="notifications">notifications</span>
+                </button>
+                <button class="p-2 hover:bg-surface-container-low rounded-full transition-all text-on-surface-variant active:opacity-80">
+                    <span class="material-symbols-outlined" data-original-icon="help_outline">help_outline</span>
+                </button>
+                <div class="h-8 w-[1px] bg-outline-variant hidden sm:block"></div>
+                <div class="flex items-center gap-3 pl-2 h-full">
+                    <div class="text-right hidden sm:block">
+                        <p class="text-label-md font-label-md text-on-surface leading-tight" id="header-profile-name">University Librarian</p>
+                        <p class="text-label-sm font-label-sm text-on-surface-variant leading-tight" id="header-profile-role">Administrator</p>
+                    </div>
+                    <img class="w-10 h-10 rounded-full border-2 border-primary-container object-cover cursor-pointer hover:opacity-90 transition-all" alt="University Librarian" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAEBGZ_nN-EAxvv9e7zmRy3dgQ_nrfW80rpPjd8H4zZ2OVEccW7oIomkp-PZtUUBl_ZaMaWmkxvM7-PQdH2ZyYsJq5_NUAw3A6175Lak7Qb8wNfPAX_eHMTSlfxZ9-C8XUddwUss2qeFpckR2kVyYM3h31RCRvhWVHctt0L9Cv5g8AUD27R7Y_OwyxXey9XiKTqelB8_kBajgUjm2wnWgHyIJ62ob-6RhEwh73VoiEWzzKz0U-EEqSWg_XVFfBCHx_A2Tm0mxLdzg">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="lg:ml-[280px] p-container-padding min-h-[calc(100vh-120px)]">
+        <!-- Welcome/Header Section -->
+        <div class="mb-8 p-8 rounded-3xl bg-gradient-to-r from-primary to-primary-container text-white soft-shadow flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <h1 class="text-display-lg font-display-lg mb-2">Manage Issued Books</h1>
+                <p class="text-body-base opacity-90 max-w-lg">Review active transactions, handle book returns, and track overdue statuses in real-time. Maintaining catalog accuracy starts here.</p>
+            </div>
+            <div class="flex gap-3"><button class="bg-white/20 hover:bg-white/30 backdrop-blur-md px-6 py-3 rounded-2xl font-label-md transition-all flex items-center gap-2 active:scale-95 shadow-md hover:shadow-lg" onclick="window.print()"><span class="material-symbols-outlined">print</span> Export Report</button></div>
+        </div>
+
+        <!-- Table Container -->
+        <div class="bg-white rounded-3xl soft-shadow border border-slate-200 overflow-hidden">
+            <!-- Table Controls -->
+            <div class="p-6 border-b border-slate-100 flex flex-col md:flex-row gap-4 justify-between items-center">
+                <div class="relative w-full md:w-96">
+                    <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">filter_list</span>
+                    <input class="w-full pl-12 pr-4 py-3 bg-surface-container-low border-none rounded-2xl focus:ring-2 focus:ring-primary text-body-base transition-all" id="transactionSearch" placeholder="Search student or book title..." type="text">
+                </div>
+                <div class="flex gap-3 w-full md:w-auto">
+                    <select id="statusFilter" class="flex-1 md:flex-none py-3 px-4 bg-surface-container-low border-none rounded-2xl text-label-md font-label-md focus:ring-2 focus:ring-primary transition-all">
+                        <option value="All">All Status</option>
+                        <option value="Issued">Issued</option>
+                        <option value="Overdue">Overdue</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Scrollable Content -->
+            <div class="overflow-x-auto scrollbar-hide">
+                <table class="w-full text-left border-collapse" id="transactionTable">
+                    <thead>
+                        <tr class="bg-slate-50/50"><th class="px-6 py-4 text-label-sm font-bold uppercase tracking-wider text-slate-500">Transaction ID</th><th class="px-6 py-4 text-label-sm font-bold uppercase tracking-wider text-slate-500">Student Name</th><th class="px-6 py-4 text-label-sm font-bold uppercase tracking-wider text-slate-500">Book Title</th><th class="px-6 py-4 text-label-sm font-bold uppercase tracking-wider text-slate-500">Issue Date</th><th class="px-6 py-4 text-label-sm font-bold uppercase tracking-wider text-slate-500">Due Date</th><th class="px-6 py-4 text-label-sm font-bold uppercase tracking-wider text-slate-500">Status</th><th class="px-6 py-4 text-label-sm font-bold uppercase tracking-wider text-slate-500 text-right">Actions</th></tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100" id="transactionBody">
+                        <!-- Dynamic Rows go here -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Empty State -->
+            <div class="hidden flex-col items-center justify-center p-20 text-center" id="emptyState">
+                <span class="material-symbols-outlined text-[64px] text-slate-200 mb-4" data-original-icon="search_off">search_off</span>
+                <h3 class="text-title-lg text-slate-400">No matching transactions found</h3>
+                <p class="text-body-base text-slate-300">Try adjusting your search criteria.</p>
+            </div>
+
+            <!-- Pagination (Placeholder) -->
+            <div class="p-6 border-t border-slate-100 flex justify-between items-center bg-slate-50/30">
+                <p class="text-label-sm text-on-surface-variant" id="transactionSummary">Showing 0 to 0 of 0 transactions</p>
+                <div class="flex gap-2">
+                    <button class="p-2 border border-slate-200 rounded-xl hover:bg-white transition-colors disabled:opacity-50" disabled="">
+                        <span class="material-symbols-outlined" data-original-icon="chevron_left">chevron_left</span>
+                    </button>
+                    <button class="w-10 h-10 bg-primary text-white rounded-xl font-label-md flex items-center justify-center">1</button>
+                    <button class="p-2 border border-slate-200 rounded-xl hover:bg-white transition-colors disabled:opacity-50" disabled="">
+                        <span class="material-symbols-outlined" data-original-icon="chevron_right">chevron_right</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Shell -->
+    <footer class="lg:ml-[280px] bg-surface-container-lowest dark:bg-surface-container border-t border-outline-variant py-4 px-gutter flex justify-between items-center mt-auto">
+        <span class="text-label-md font-label-md font-bold text-on-surface">UniLibrary</span>
+        <p class="text-label-sm font-label-sm text-on-surface-variant">© 2024 UniLibrary System. All Rights Reserved.</p>
+        <div class="flex gap-4">
+            <a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Documentation</a>
+            <a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Support</a>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Container -->
+    <div class="fixed bottom-8 right-8 z-[100] translate-y-20 opacity-0 transition-all duration-300 ease-out" id="toast">
+        <div class="bg-inverse-surface text-white px-6 py-4 rounded-2xl flex items-center gap-3 shadow-2xl">
+            <span class="material-symbols-outlined text-emerald-400" data-original-icon="check_circle">check_circle</span>
+            <span class="text-label-md font-label-md" id="toastMessage">Book returned successfully!</span>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Shared storage: same keys/shapes as books.html, students.html, issue.html and index.html
+        // so data entered on one page is instantly visible on the others.
+        const LIB_KEYS = { BOOKS: 'unilibrary_books', STUDENTS: 'unilibrary_students', ISSUED: 'unilibrary_issued', STATS: 'unilibrary_stats' };
+
+        const Storage = {
+            get: (key) => JSON.parse(localStorage.getItem(key)) || null,
+            set: (key, data) => localStorage.setItem(key, JSON.stringify(data))
+        };
+
+        if (!Storage.get(LIB_KEYS.BOOKS)) {
+            Storage.set(LIB_KEYS.BOOKS, [
+                { id: 'LIB-1001', title: 'Introduction to Algorithms', author: 'Thomas H. Cormen', category: 'Computer Science', quantity: 12 },
+                { id: 'LIB-1002', title: 'The Art of Computer Programming', author: 'Donald Knuth', category: 'Computer Science', quantity: 5 },
+                { id: 'LIB-1003', title: 'Calculus: Early Transcendentals', author: 'James Stewart', category: 'Mathematics', quantity: 20 },
+                { id: 'LIB-1004', title: 'University Physics', author: 'Hugh D. Young', category: 'Physics', quantity: 15 },
+                { id: 'LIB-1005', title: 'Clean Code', author: 'Robert C. Martin', category: 'Computer Science', quantity: 8 },
+                { id: 'LIB-1006', title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', category: 'Literature', quantity: 25 }
+            ]);
+        }
+
+        if (!Storage.get(LIB_KEYS.STUDENTS)) {
+            Storage.set(LIB_KEYS.STUDENTS, [
+                { id: 'STU-2024-001', name: 'Alexander Pierce', department: 'Computer Science', semester: 6, phone: '+1-555-0101' },
+                { id: 'STU-2024-042', name: 'Sarah Jenkins', department: 'Business Admin', semester: 4, phone: '+1-555-0212' },
+                { id: 'STU-2023-118', name: 'David Chen', department: 'Engineering', semester: 8, phone: '+1-555-0345' },
+                { id: 'STU-2024-055', name: 'Emily Watson', department: 'Arts & Design', semester: 2, phone: '+1-555-0567' }
+            ]);
+        }
+
+        if (!Storage.get(LIB_KEYS.ISSUED)) {
+            Storage.set(LIB_KEYS.ISSUED, [
+                { id: 'TX-8821', studentId: 'STU-2024-001', studentName: 'Alexander Pierce', bookId: 'LIB-1006', bookTitle: 'The Great Gatsby', issueDate: '2023-10-12', dueDate: '2023-10-26', status: 'Overdue' },
+                { id: 'TX-8845', studentId: 'STU-2024-042', studentName: 'Sarah Jenkins', bookId: 'LIB-1001', bookTitle: 'Introduction to Algorithms', issueDate: '2023-11-01', dueDate: '2023-11-15', status: 'Issued' },
+                { id: 'TX-8902', studentId: 'STU-2023-118', studentName: 'David Chen', bookId: 'LIB-1005', bookTitle: 'Clean Code', issueDate: '2023-11-05', dueDate: '2023-11-19', status: 'Issued' }
+            ]);
+        }
+
+        if (!Storage.get(LIB_KEYS.STATS)) {
+            Storage.set(LIB_KEYS.STATS, { returnedToday: 28 });
+        }
+
+        /**
+         * Return Page Logic (return.js equivalent)
+         */
+        const TransactionManager = window.TransactionManager = {
+            transactions: [],
+
+            init() {
+                this.loadData();
+                this.setupEventListeners();
+                this.render();
+            },
+
+            loadData() {
+                this.transactions = Storage.get(LIB_KEYS.ISSUED) || [];
+            },
+
+            setupEventListeners() {
+                document.getElementById('transactionSearch').addEventListener('input', () => this.render());
+                document.getElementById('statusFilter').addEventListener('change', () => this.render());
+            },
+
+            render() {
+                const tbody = document.getElementById('transactionBody');
+                const emptyState = document.getElementById('emptyState');
+                const table = document.getElementById('transactionTable');
+                const searchTerm = document.getElementById('transactionSearch').value.toLowerCase();
+                const statusFilter = document.getElementById('statusFilter').value;
+
+                const filtered = this.transactions.filter(tx => {
+                    const matchesSearch = tx.studentName.toLowerCase().includes(searchTerm) || 
+                                         tx.bookTitle.toLowerCase().includes(searchTerm) ||
+                                         tx.id.toLowerCase().includes(searchTerm);
+                    const matchesStatus = statusFilter === 'All' || tx.status === statusFilter;
+                    return matchesSearch && matchesStatus;
+                });
+
+                tbody.innerHTML = '';
+
+                if (filtered.length === 0) {
+                    table.style.display = 'none';
+                    emptyState.classList.remove('hidden');
+                    emptyState.classList.add('flex');
+                } else {
+                    table.style.display = 'table';
+                    emptyState.classList.add('hidden');
+                    emptyState.classList.remove('flex');
+
+                    filtered.forEach(tx => {
+                        const row = document.createElement('tr');
+                        row.className = 'hover:bg-slate-50/50 transition-colors group';
+                        
+                        const statusClass = tx.status === 'Overdue' 
+                            ? 'bg-amber-100 text-amber-700' 
+                            : 'bg-blue-100 text-blue-700';
+
+                        row.innerHTML = `
+                            <td class="px-6 py-5 text-body-sm font-medium text-primary">${tx.id}</td>
+                            <td class="px-6 py-5">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-primary font-bold text-[10px]">
+                                        ${tx.studentName.split(' ').map(n => n[0]).join('')}
+                                    </div>
+                                    <span class="text-body-base font-semibold">${tx.studentName}</span>
+                                </div>
+                            </td>
+                            <td class="px-6 py-5 text-body-base">${tx.bookTitle}</td>
+                            <td class="px-6 py-5 text-body-sm text-slate-500">${tx.issueDate}</td>
+                            <td class="px-6 py-5 text-body-sm text-slate-500">${tx.dueDate}</td>
+                            <td class="px-6 py-5">
+                                <span class="px-3 py-1 rounded-full text-[12px] font-bold ${statusClass}">${tx.status}</span>
+                            </td>
+                            <td class="px-6 py-5 text-right">
+                                <button class="bg-primary text-white px-4 py-2 rounded-xl text-label-sm font-label-md transition-all hover:shadow-lg active:scale-95 flex items-center gap-2 ml-auto" 
+                                    onclick="TransactionManager.returnBook('${tx.id}')">
+                                    <span class="material-symbols-outlined text-[18px]">keyboard_return</span> Return
+                                </button>
+                            </td>
+                        `;
+                        tbody.appendChild(row);
+                    });
+                }
+
+                document.getElementById('transactionSummary').innerText = 
+                    `Showing ${filtered.length} of ${this.transactions.length} transactions`;
+            },
+
+            returnBook(txId) {
+                const txIndex = this.transactions.findIndex(t => t.id === txId);
+                if (txIndex === -1) return;
+
+                const tx = this.transactions[txIndex];
+                
+                // 1. Remove from ISSUED
+                this.transactions.splice(txIndex, 1);
+                Storage.set(LIB_KEYS.ISSUED, this.transactions);
+
+                // 2. Increment Book Quantity (same books.html sees)
+                const books = Storage.get(LIB_KEYS.BOOKS) || [];
+                const book = books.find(b => b.id === tx.bookId) || books.find(b => b.title === tx.bookTitle);
+                if (book) {
+                    book.quantity = (book.quantity || 0) + 1;
+                    Storage.set(LIB_KEYS.BOOKS, books);
+                }
+
+                // 3. Update Stats (Global App State)
+                const stats = Storage.get(LIB_KEYS.STATS) || { returnedToday: 0 };
+                stats.returnedToday = (stats.returnedToday || 0) + 1;
+                Storage.set(LIB_KEYS.STATS, stats);
+
+                // 4. Update UI
+                this.render();
+                App.showToast(`Success! "${tx.bookTitle}" has been returned.`, 'success');
+            }
+        };
+
+        // Self-contained toast helper for this page
+        window.App = {
+            showToast(message) {
+                const toast = document.getElementById('toast');
+                const toastMsg = document.getElementById('toastMessage');
+                toastMsg.innerText = message;
+                toast.classList.remove('translate-y-20', 'opacity-0');
+                setTimeout(() => {
+                    toast.classList.add('translate-y-20', 'opacity-0');
+                }, 3000);
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            TransactionManager.init();
+
+            // Apply a custom profile name/role (set on the Settings page) if one is saved.
+            const savedProfile = JSON.parse(localStorage.getItem('unilibrary_profile') || 'null');
+            if (savedProfile) {
+                const nameEl1 = document.getElementById('sidebar-profile-name');
+                const roleEl1 = document.getElementById('sidebar-profile-role');
+                const nameEl2 = document.getElementById('header-profile-name');
+                const roleEl2 = document.getElementById('header-profile-role');
+                if (nameEl1) nameEl1.textContent = savedProfile.name;
+                if (roleEl1) roleEl1.textContent = savedProfile.role;
+                if (nameEl2) nameEl2.textContent = savedProfile.name;
+                if (roleEl2) roleEl2.textContent = savedProfile.role;
+            }
+        });</script></body></html>

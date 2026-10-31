@@ -1,0 +1,507 @@
+<!DOCTYPE html><html class="light" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed": "#0b1c30",
+                    "on-surface-variant": "#434655",
+                    "outline-variant": "#c3c6d7",
+                    "surface-bright": "#f9f9ff",
+                    "surface-container-highest": "#d8e3fb",
+                    "on-secondary-fixed-variant": "#38485d",
+                    "inverse-on-surface": "#ecf1ff",
+                    "surface-variant": "#d8e3fb",
+                    "tertiary-container": "#6b6e70",
+                    "secondary": "#505f76",
+                    "primary-fixed": "#dbe1ff",
+                    "on-surface": "#111c2d",
+                    "secondary-container": "#d0e1fb",
+                    "primary-container": "#2563eb",
+                    "tertiary-fixed": "#e0e3e5",
+                    "surface-container-high": "#dee8ff",
+                    "secondary-fixed-dim": "#b7c8e1",
+                    "secondary-fixed": "#d3e4fe",
+                    "on-secondary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-tint": "#0053db",
+                    "primary": "#004ac6",
+                    "on-tertiary-fixed-variant": "#444749",
+                    "background": "#f9f9ff",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed-variant": "#003ea8",
+                    "surface-container-low": "#f0f3ff",
+                    "inverse-surface": "#263143",
+                    "tertiary-fixed-dim": "#c4c7c9",
+                    "on-error": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "tertiary": "#525657",
+                    "on-secondary-container": "#54647a",
+                    "outline": "#737686",
+                    "surface-container": "#e7eeff",
+                    "on-error-container": "#93000a",
+                    "error": "#ba1a1a",
+                    "on-tertiary-container": "#eff1f3",
+                    "surface": "#f9f9ff",
+                    "on-background": "#111c2d",
+                    "primary-fixed-dim": "#b4c5ff",
+                    "on-tertiary-fixed": "#191c1e",
+                    "surface-dim": "#cfdaf2",
+                    "on-primary-container": "#eeefff",
+                    "on-primary": "#ffffff",
+                    "on-primary-fixed": "#00174b",
+                    "inverse-primary": "#b4c5ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "4px",
+                    "container-padding": "24px",
+                    "stack-gap-md": "20px",
+                    "sidebar-width": "280px",
+                    "navbar-height": "72px",
+                    "gutter": "16px",
+                    "stack-gap-sm": "12px",
+                    "stack-gap-lg": "32px"
+            },
+            "fontFamily": {
+                    "body-base": ["Poppins"],
+                    "display-lg": ["Poppins"],
+                    "label-sm": ["Poppins"],
+                    "title-lg": ["Poppins"],
+                    "headline-md": ["Poppins"],
+                    "label-md": ["Poppins"],
+                    "display-lg-mobile": ["Poppins"],
+                    "body-sm": ["Poppins"]
+            },
+            "fontSize": {
+                    "body-base": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+                    "display-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    }catch(_e){}</script>    <script src="storage.js"></script>
+</head><body class="bg-surface text-on-surface">
+    <!-- Sidebar Component -->
+    <aside class="hidden lg:flex flex-col h-screen fixed left-0 top-0 w-[280px] bg-inverse-surface shadow-md z-50">
+        <div class="p-6 flex flex-col gap-2">
+            <span class="text-title-lg font-title-lg font-bold text-white">UniLibrary</span>
+            <p class="text-label-sm font-label-sm text-surface-variant opacity-70">LMS Admin v1.2</p>
+        </div>
+        <nav class="flex-1 flex flex-col mt-4 px-4 gap-1"><a class="flex items-center gap-3 text-surface-variant py-3 px-4 rounded-lg hover:bg-primary/10 hover:text-primary transition-colors duration-200" href="index.html">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-label-md font-label-md">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 text-surface-variant py-3 px-4 rounded-lg hover:bg-primary/10 hover:text-primary transition-colors duration-200" href="books.html">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="text-label-md font-label-md">Books</span>
+</a>
+<a class="flex items-center gap-3 text-surface-variant py-3 px-4 rounded-lg hover:bg-primary/10 hover:text-primary transition-colors duration-200" href="students.html">
+<span class="material-symbols-outlined">group</span>
+<span class="text-label-md font-label-md">Students</span>
+</a>
+<a class="flex items-center gap-3 bg-primary/20 border-l-4 border-primary text-primary-fixed-dim py-3 px-4 rounded-r-lg" href="issue.html">
+<span class="material-symbols-outlined">assignment_turned_in</span>
+<span class="text-label-md font-label-md">Issue Book</span>
+</a>
+<a class="flex items-center gap-3 text-surface-variant py-3 px-4 rounded-lg hover:bg-primary/10 hover:text-primary transition-colors duration-200" href="return.html">
+<span class="material-symbols-outlined">assignment_return</span>
+<span class="text-label-md font-label-md">Return Book</span>
+</a>
+<a class="mt-auto flex items-center gap-3 text-surface-variant py-3 px-4 rounded-lg hover:bg-primary/10 hover:text-primary transition-colors duration-200" href="settings.html">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-label-md font-label-md">Settings</span>
+</a></nav>
+        <div class="p-4 border-t border-white/10 flex items-center gap-3">
+            <img class="w-10 h-10 rounded-full border-2 border-primary-container object-cover" alt="University Librarian" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAEBGZ_nN-EAxvv9e7zmRy3dgQ_nrfW80rpPjd8H4zZ2OVEccW7oIomkp-PZtUUBl_ZaMaWmkxvM7-PQdH2ZyYsJq5_NUAw3A6175Lak7Qb8wNfPAX_eHMTSlfxZ9-C8XUddwUss2qeFpckR2kVyYM3h31RCRvhWVHctt0L9Cv5g8AUD27R7Y_OwyxXey9XiKTqelB8_kBajgUjm2wnWgHyIJ62ob-6RhEwh73VoiEWzzKz0U-EEqSWg_XVFfBCHx_A2Tm0mxLdzg">
+            <div class="flex flex-col">
+                <p class="text-label-md font-label-md text-white" id="sidebar-profile-name">University Librarian</p>
+                <p class="text-label-sm font-label-sm text-surface-variant" id="sidebar-profile-role">Administrator</p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="lg:ml-[280px] min-h-screen flex flex-col">
+        <!-- TopNavBar -->
+        <header class="flex justify-between items-center px-6 w-full h-[72px] sticky top-0 z-40 bg-surface/80 backdrop-blur-md border-b border-outline-variant">
+            <div class="flex items-center gap-4">
+                <button class="lg:hidden text-primary">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div class="relative hidden sm:block">
+                    <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+                    <input class="pl-10 pr-4 py-2 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary text-body-sm font-body-sm w-64" placeholder="Search resources..." type="text">
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="text-title-lg font-title-lg font-bold text-primary hidden md:block">Academic Resource Center</span>
+                <div class="flex items-center gap-2">
+                    <button class="p-2 hover:bg-surface-container-low rounded-full transition-all text-on-surface-variant">
+                        <span class="material-symbols-outlined">notifications</span>
+                    </button>
+                    <button class="p-2 hover:bg-surface-container-low rounded-full transition-all text-on-surface-variant">
+                        <span class="material-symbols-outlined">help_outline</span>
+                    </button>
+                    <div class="h-8 w-[1px] bg-outline-variant mx-2"></div>
+                    <div class="flex items-center gap-3 pl-2 h-full">
+                        <div class="text-right hidden sm:block">
+                            <p class="text-label-md font-label-md text-on-surface leading-tight" id="header-profile-name">University Librarian</p>
+                            <p class="text-label-sm font-label-sm text-on-surface-variant leading-tight" id="header-profile-role">Administrator</p>
+                        </div>
+                        <img class="w-10 h-10 rounded-full border-2 border-primary-container object-cover cursor-pointer hover:opacity-90 transition-all" alt="University Librarian" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAEBGZ_nN-EAxvv9e7zmRy3dgQ_nrfW80rpPjd8H4zZ2OVEccW7oIomkp-PZtUUBl_ZaMaWmkxvM7-PQdH2ZyYsJq5_NUAw3A6175Lak7Qb8wNfPAX_eHMTSlfxZ9-C8XUddwUss2qeFpckR2kVyYM3h31RCRvhWVHctt0L9Cv5g8AUD27R7Y_OwyxXey9XiKTqelB8_kBajgUjm2wnWgHyIJ62ob-6RhEwh73VoiEWzzKz0U-EEqSWg_XVFfBCHx_A2Tm0mxLdzg">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Content -->
+        <div class="flex-1 p-6 lg:p-10 max-w-7xl w-full mx-auto flex flex-col items-center">
+            <div class="mb-8">
+                <h1 class="text-headline-md font-headline-md text-on-surface mb-2">Issue New Book</h1>
+                <p class="text-body-base font-body-base text-on-surface-variant">Record a new book loan for a student in the library system.</p>
+            </div>
+
+            <div class="grid grid-cols-1 xl:grid-cols-12 gap-8 items-start w-full">
+                <!-- Issue Book Form Card -->
+                <div class="xl:col-span-8 bg-surface-container-lowest p-8 rounded-2xl soft-shadow border border-outline-variant">
+                    <form class="space-y-6" id="issueBookForm">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Student Selection -->
+                            <div class="space-y-2">
+                                <label class="text-label-md font-label-md text-on-surface-variant block">Select Student</label>
+                                <div class="relative">
+                                    <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">person_search</span>
+                                    <select class="w-full pl-10 pr-10 py-3 bg-surface-container-low border border-outline-variant rounded-xl focus:ring-2 focus:ring-primary focus:border-primary text-body-base font-body-base appearance-none" id="studentSelect" required="">
+                                        <option disabled="" selected="" value="">Search by Name or ID</option>
+                                    </select>
+                                    <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none">expand_more</span>
+                                </div>
+                            </div>
+                            <!-- Book Selection -->
+                            <div class="space-y-2">
+                                <label class="text-label-md font-label-md text-on-surface-variant block">Select Book</label>
+                                <div class="relative">
+                                    <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">library_books</span>
+                                    <select class="w-full pl-10 pr-10 py-3 bg-surface-container-low border border-outline-variant rounded-xl focus:ring-2 focus:ring-primary focus:border-primary text-body-base font-body-base appearance-none" id="bookSelect" required="">
+                                        <option disabled="" selected="" value="">Search by Title or ISBN</option>
+                                    </select>
+                                    <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none">expand_more</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Issue Date -->
+                            <div class="space-y-2">
+                                <label class="text-label-md font-label-md text-on-surface-variant block">Issue Date</label>
+                                <div class="relative">
+                                    <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">calendar_today</span>
+                                    <input class="w-full pl-10 pr-4 py-3 bg-surface-container-low border border-outline-variant rounded-xl focus:ring-2 focus:ring-primary focus:border-primary text-body-base font-body-base appearance-none" id="issueDate" required="" type="date">
+                                </div>
+                            </div>
+                            <!-- Return Date -->
+                            <div class="space-y-2">
+                                <label class="text-label-md font-label-md text-on-surface-variant block">Expected Return Date</label>
+                                <div class="relative">
+                                    <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">event_upcoming</span>
+                                    <input class="w-full pl-10 pr-4 py-3 bg-surface-container-low border border-outline-variant rounded-xl focus:ring-2 focus:ring-primary focus:border-primary text-body-base font-body-base appearance-none" id="returnDate" required="" type="date">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 flex flex-col md:flex-row gap-4 items-center">
+                            <button class="w-full md:w-auto px-8 py-3.5 bg-primary text-white rounded-xl font-label-md text-label-md shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all active:scale-95" type="submit">
+                                Issue Book
+                            </button>
+                            <button class="w-full md:w-auto px-8 py-3.5 bg-surface-container-high text-on-surface rounded-xl font-label-md text-label-md hover:bg-surface-container-highest transition-all" type="reset">
+                                Cancel
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Recent Issues Summary -->
+                <div class="xl:col-span-4 space-y-6">
+                    <div class="bg-surface-container-lowest rounded-2xl soft-shadow border border-outline-variant p-8">
+                        <div class="flex items-center justify-between mb-6">
+                            <h2 class="text-title-lg font-title-lg text-on-surface">Recent Issues</h2>
+                            <span class="bg-primary-container text-on-primary-container text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">Live</span>
+                        </div>
+                        <div class="space-y-4" id="recentIssuesList">
+                            <!-- Dynamic items will go here -->
+                        </div>
+                        <button class="w-full mt-6 py-2 text-primary font-label-md text-label-md hover:underline decoration-2 underline-offset-4">
+                            View All History
+                        </button>
+                    </div>
+
+                    <!-- Notification Banner (Hidden by default) -->
+                    <div id="successNotification" class="hidden animate-bounce bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-xl flex items-center gap-3">
+                        <span class="material-symbols-outlined">check_circle</span>
+                        <span id="notificationMessage" class="text-label-md font-label-md">Book issued successfully!</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 w-full">
+                <div class="bg-surface-container-lowest p-6 rounded-2xl soft-shadow border-l-4 border-primary">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container">
+                            <span class="material-symbols-outlined">auto_stories</span>
+                        </div>
+                        <div>
+                            <p class="text-label-sm font-label-sm text-on-surface-variant">Active Loans</p>
+                            <p class="text-title-lg font-title-lg text-on-surface" id="statActiveLoans">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-surface-container-lowest p-6 rounded-2xl soft-shadow border-l-4 border-error">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-error-container flex items-center justify-center text-on-error-container">
+                            <span class="material-symbols-outlined">running_with_errors</span>
+                        </div>
+                        <div>
+                            <p class="text-label-sm font-label-sm text-on-surface-variant">Overdue Books</p>
+                            <p class="text-title-lg font-title-lg text-on-surface" id="statOverdue">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-surface-container-lowest p-6 rounded-2xl soft-shadow border-l-4 border-green-500">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-700">
+                            <span class="material-symbols-outlined">inventory</span>
+                        </div>
+                        <div>
+                            <p class="text-label-sm font-label-sm text-on-surface-variant">Available Stock</p>
+                            <p class="text-title-lg font-title-lg text-on-surface" id="statStock">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="flex justify-between items-center px-6 py-4 mt-auto border-t border-outline-variant bg-surface-container-lowest">
+            <p class="text-label-sm font-label-sm text-on-surface-variant">© 2024 UniLibrary System. All Rights Reserved.</p>
+            <div class="flex gap-4">
+                <a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">v1.2.4</a>
+                <a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Support</a>
+            </div>
+        </footer>
+    </main>
+
+    <!-- App Logic Scripts -->
+    <script>
+        // Shared storage: same keys/shapes as books.html, students.html, return.html and index.html
+        // so data entered on one page is instantly visible on the others.
+        const LIB_KEYS = { BOOKS: 'unilibrary_books', STUDENTS: 'unilibrary_students', ISSUED: 'unilibrary_issued', STATS: 'unilibrary_stats' };
+
+        const Storage = {
+            get: (key) => JSON.parse(localStorage.getItem(key)) || [],
+            save: (key, data) => localStorage.setItem(key, JSON.stringify(data)),
+            init: () => {
+                if (!localStorage.getItem(LIB_KEYS.BOOKS)) {
+                    Storage.save(LIB_KEYS.BOOKS, [
+                        { id: 'LIB-1001', title: 'Introduction to Algorithms', author: 'Thomas H. Cormen', category: 'Computer Science', quantity: 12 },
+                        { id: 'LIB-1002', title: 'The Art of Computer Programming', author: 'Donald Knuth', category: 'Computer Science', quantity: 5 },
+                        { id: 'LIB-1003', title: 'Calculus: Early Transcendentals', author: 'James Stewart', category: 'Mathematics', quantity: 20 },
+                        { id: 'LIB-1004', title: 'University Physics', author: 'Hugh D. Young', category: 'Physics', quantity: 15 },
+                        { id: 'LIB-1005', title: 'Clean Code', author: 'Robert C. Martin', category: 'Computer Science', quantity: 8 },
+                        { id: 'LIB-1006', title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', category: 'Literature', quantity: 25 }
+                    ]);
+                }
+                if (!localStorage.getItem(LIB_KEYS.STUDENTS)) {
+                    Storage.save(LIB_KEYS.STUDENTS, [
+                        { id: 'STU-2024-001', name: 'Alexander Pierce', department: 'Computer Science', semester: 6, phone: '+1-555-0101' },
+                        { id: 'STU-2024-042', name: 'Sarah Jenkins', department: 'Business Admin', semester: 4, phone: '+1-555-0212' },
+                        { id: 'STU-2023-118', name: 'David Chen', department: 'Engineering', semester: 8, phone: '+1-555-0345' },
+                        { id: 'STU-2024-055', name: 'Emily Watson', department: 'Arts & Design', semester: 2, phone: '+1-555-0567' }
+                    ]);
+                }
+                if (!localStorage.getItem(LIB_KEYS.ISSUED)) {
+                    Storage.save(LIB_KEYS.ISSUED, [
+                        { id: 'TX-8821', studentId: 'STU-2024-001', studentName: 'Alexander Pierce', bookId: 'LIB-1006', bookTitle: 'The Great Gatsby', issueDate: '2023-10-12', dueDate: '2023-10-26', status: 'Overdue' },
+                        { id: 'TX-8845', studentId: 'STU-2024-042', studentName: 'Sarah Jenkins', bookId: 'LIB-1001', bookTitle: 'Introduction to Algorithms', issueDate: '2023-11-01', dueDate: '2023-11-15', status: 'Issued' },
+                        { id: 'TX-8902', studentId: 'STU-2023-118', studentName: 'David Chen', bookId: 'LIB-1005', bookTitle: 'Clean Code', issueDate: '2023-11-05', dueDate: '2023-11-19', status: 'Issued' }
+                    ]);
+                }
+                if (!localStorage.getItem(LIB_KEYS.STATS)) {
+                    Storage.save(LIB_KEYS.STATS, { returnedToday: 28 });
+                }
+            }
+        };
+
+        // issue.js logic
+        document.addEventListener('DOMContentLoaded', () => {
+            // Apply a custom profile name/role (set on the Settings page) if one is saved.
+            const savedProfile = JSON.parse(localStorage.getItem('unilibrary_profile') || 'null');
+            if (savedProfile) {
+                const nameEl1 = document.getElementById('sidebar-profile-name');
+                const roleEl1 = document.getElementById('sidebar-profile-role');
+                const nameEl2 = document.getElementById('header-profile-name');
+                const roleEl2 = document.getElementById('header-profile-role');
+                if (nameEl1) nameEl1.textContent = savedProfile.name;
+                if (roleEl1) roleEl1.textContent = savedProfile.role;
+                if (nameEl2) nameEl2.textContent = savedProfile.name;
+                if (roleEl2) roleEl2.textContent = savedProfile.role;
+            }
+
+            Storage.init();
+            populateDropdowns();
+            initDates();
+            updateStats();
+            renderRecentIssues();
+
+            const form = document.getElementById('issueBookForm');
+            form.addEventListener('submit', handleIssueSubmit);
+        });
+
+        function populateDropdowns() {
+            const studentSelect = document.getElementById('studentSelect');
+            const bookSelect = document.getElementById('bookSelect');
+            while (studentSelect && studentSelect.options.length > 1) studentSelect.remove(1);
+            while (bookSelect && bookSelect.options.length > 1) bookSelect.remove(1);
+            
+            const students = Storage.get(LIB_KEYS.STUDENTS);
+            const books = Storage.get(LIB_KEYS.BOOKS);
+
+            students.forEach(student => {
+                const opt = new Option(`${student.name} (ID: ${student.id})`, student.id);
+                studentSelect.add(opt);
+            });
+
+            books.forEach(book => {
+                const opt = new Option(`${book.title} (Qty: ${book.quantity})`, book.id);
+                if (book.quantity <= 0) opt.disabled = true;
+                bookSelect.add(opt);
+            });
+        }
+
+        function initDates() {
+            const today = new Date().toISOString().split('T')[0];
+            const issueInput = document.getElementById('issueDate');
+            const returnInput = document.getElementById('returnDate');
+            
+            issueInput.value = today;
+            
+            const due = new Date();
+            due.setDate(due.getDate() + 14);
+            returnInput.value = due.toISOString().split('T')[0];
+        }
+
+        function handleIssueSubmit(e) {
+            e.preventDefault();
+            
+            const studentId = document.getElementById('studentSelect').value;
+            const bookId = document.getElementById('bookSelect').value;
+            const issueDate = document.getElementById('issueDate').value;
+            const returnDate = document.getElementById('returnDate').value;
+
+            if (!studentId || !bookId) {
+                alert('Please select both a student and a book.');
+                return;
+            }
+
+            // 1. Update Books Inventory
+            const books = Storage.get(LIB_KEYS.BOOKS);
+            const bookIdx = books.findIndex(b => b.id === bookId);
+
+            if (books[bookIdx].quantity <= 0) {
+                alert('This book is currently out of stock.');
+                return;
+            }
+
+            books[bookIdx].quantity -= 1;
+            Storage.save(LIB_KEYS.BOOKS, books);
+
+            // 2. Record Transaction
+            const students = Storage.get(LIB_KEYS.STUDENTS);
+            const student = students.find(s => s.id === studentId);
+            const book = books[bookIdx];
+
+            const issued = Storage.get(LIB_KEYS.ISSUED);
+            const newIssue = {
+                id: 'TX-' + Date.now(),
+                studentId,
+                studentName: student.name,
+                bookId,
+                bookTitle: book.title,
+                issueDate,
+                dueDate: returnDate,
+                status: 'Issued'
+            };
+
+            issued.unshift(newIssue);
+            Storage.save(LIB_KEYS.ISSUED, issued);
+
+            // 3. UI Feedback
+            showNotification(`Success! "${book.title}" issued to ${student.name}.`);
+            
+            // 4. Reset & Refresh
+            e.target.reset();
+            initDates();
+            updateStats();
+            renderRecentIssues();
+            
+            populateDropdowns();
+        }
+
+        function showNotification(msg) {
+            const banner = document.getElementById('successNotification');
+            const message = document.getElementById('notificationMessage');
+            message.textContent = msg;
+            banner.classList.remove('hidden');
+            setTimeout(() => banner.classList.add('hidden'), 5000);
+        }
+
+        function updateStats() {
+            const issued = Storage.get(LIB_KEYS.ISSUED);
+            const books = Storage.get(LIB_KEYS.BOOKS);
+
+            const activeLoans = issued.length;
+            const overdue = issued.filter(i => i.status === 'Overdue').length;
+            const totalStock = books.reduce((acc, b) => acc + b.quantity, 0);
+
+            document.getElementById('statActiveLoans').textContent = activeLoans.toLocaleString();
+            document.getElementById('statStock').textContent = totalStock.toLocaleString();
+            document.getElementById('statOverdue').textContent = overdue.toLocaleString();
+        }
+
+        window.populateDropdowns = populateDropdowns;
+        window.updateStats = updateStats;
+        window.renderRecentIssues = renderRecentIssues;
+        function renderRecentIssues() {
+            const container = document.getElementById('recentIssuesList');
+            const issued = Storage.get(LIB_KEYS.ISSUED).slice(0, 4);
+            
+            if (issued.length === 0) {
+                container.innerHTML = '<p class="text-body-sm text-on-surface-variant text-center py-4">No recent issues found.</p>';
+                return;
+            }
+
+            container.innerHTML = issued.map(item => `
+                <div class="flex items-start gap-3 p-3 rounded-xl hover:bg-surface-container-low transition-colors border border-transparent hover:border-outline-variant">
+                    <div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container flex-shrink-0">
+                        <span class="material-symbols-outlined text-[20px]">assignment_ind</span>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <p class="text-body-sm font-medium text-on-surface truncate">${item.studentName}</p>
+                        <p class="text-label-sm text-on-surface-variant truncate">${item.bookTitle}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+    </script>
+</body></html>

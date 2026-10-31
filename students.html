@@ -1,0 +1,510 @@
+<!DOCTYPE html><html lang="en" class="light"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#111c2d",
+                    "inverse-on-surface": "#ecf1ff",
+                    "surface-dim": "#cfdaf2",
+                    "on-primary-fixed": "#00174b",
+                    "error-container": "#ffdad6",
+                    "surface": "#f9f9ff",
+                    "primary-fixed": "#dbe1ff",
+                    "on-surface-variant": "#434655",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#263143",
+                    "primary": "#004ac6",
+                    "secondary": "#505f76",
+                    "tertiary": "#525657",
+                    "secondary-fixed": "#d3e4fe",
+                    "tertiary-fixed": "#e0e3e5",
+                    "on-primary": "#ffffff",
+                    "tertiary-container": "#6b6e70",
+                    "on-tertiary-fixed-variant": "#444749",
+                    "inverse-primary": "#b4c5ff",
+                    "outline": "#737686",
+                    "on-secondary-fixed": "#0b1c30",
+                    "on-secondary": "#ffffff",
+                    "surface-container": "#e7eeff",
+                    "surface-container-highest": "#d8e3fb",
+                    "secondary-fixed-dim": "#b7c8e1",
+                    "on-secondary-fixed-variant": "#38485d",
+                    "tertiary-fixed-dim": "#c4c7c9",
+                    "on-primary-container": "#eeefff",
+                    "error": "#ba1a1a",
+                    "outline-variant": "#c3c6d7",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-tint": "#0053db",
+                    "secondary-container": "#d0e1fb",
+                    "surface-container-low": "#f0f3ff",
+                    "on-primary-fixed-variant": "#003ea8",
+                    "background": "#f9f9ff",
+                    "primary-fixed-dim": "#b4c5ff",
+                    "on-tertiary-container": "#eff1f3",
+                    "on-background": "#111c2d",
+                    "surface-variant": "#d8e3fb",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#dee8ff",
+                    "on-secondary-container": "#54647a",
+                    "primary-container": "#2563eb",
+                    "on-tertiary-fixed": "#191c1e",
+                    "surface-bright": "#f9f9ff",
+                    "on-error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "2xl": "1rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "sidebar-width": "280px",
+                    "stack-gap-lg": "32px",
+                    "navbar-height": "72px",
+                    "base": "4px",
+                    "stack-gap-md": "20px",
+                    "container-padding": "24px",
+                    "stack-gap-sm": "12px",
+                    "gutter": "16px"
+            },
+            "fontFamily": {
+                    "label-md": ["Poppins"],
+                    "label-sm": ["Poppins"],
+                    "headline-md": ["Poppins"],
+                    "body-sm": ["Poppins"],
+                    "display-lg-mobile": ["Poppins"],
+                    "title-lg": ["Poppins"],
+                    "display-lg": ["Poppins"],
+                    "body-base": ["Poppins"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "display-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "display-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-base": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    }catch(_e){}</script><meta charset="utf-8">    <script src="storage.js"></script>
+</head><body class="bg-background text-on-surface">
+<!-- Shell Container -->
+<div class="flex min-h-screen overflow-hidden">
+<!-- SideNavBar (Shared Component) -->
+<aside class="hidden lg:flex flex-col h-screen fixed left-0 top-0 w-[280px] bg-inverse-surface dark:bg-inverse-surface shadow-md z-50">
+<div class="p-6 flex flex-col gap-2">
+<span class="text-title-lg font-title-lg font-bold text-white">UniLibrary</span>
+<span class="text-on-secondary-container text-label-sm font-label-sm opacity-80">LMS Admin v1.2</span>
+</div>
+<nav class="flex-1 flex flex-col mt-4 px-4 gap-1 overflow-y-auto custom-scrollbar">
+<!-- Dashboard -->
+<a href="index.html" class="flex items-center gap-3 text-on-secondary-container dark:text-surface-variant py-3 px-4 hover:bg-primary/5 hover:text-primary transition-colors duration-200 rounded-xl">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-label-md font-label-md">Dashboard</span>
+</a>
+<!-- Books -->
+<a href="books.html" class="flex items-center gap-3 text-on-secondary-container dark:text-surface-variant py-3 px-4 hover:bg-primary/5 hover:text-primary transition-colors duration-200 rounded-xl">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="text-label-md font-label-md">Books</span>
+</a>
+<!-- Students (ACTIVE) -->
+<a href="students.html" class="flex items-center gap-3 bg-primary/10 border-l-4 border-primary text-primary-fixed-dim py-3 px-4 transition-transform active:scale-90">
+<span class="material-symbols-outlined">group</span>
+<span class="text-label-md font-label-md">Students</span>
+</a>
+<!-- Issue Book -->
+<a href="issue.html" class="flex items-center gap-3 text-on-secondary-container dark:text-surface-variant py-3 px-4 hover:bg-primary/5 hover:text-primary transition-colors duration-200 rounded-xl">
+<span class="material-symbols-outlined">assignment_turned_in</span>
+<span class="text-label-md font-label-md">Issue Book</span>
+</a>
+<!-- Return Book -->
+<a href="return.html" class="flex items-center gap-3 text-on-secondary-container dark:text-surface-variant py-3 px-4 hover:bg-primary/5 hover:text-primary transition-colors duration-200 rounded-xl">
+<span class="material-symbols-outlined">assignment_return</span>
+<span class="text-label-md font-label-md">Return Book</span>
+</a>
+<!-- Settings -->
+<a href="settings.html" class="flex items-center gap-3 text-on-secondary-container dark:text-surface-variant py-3 px-4 mt-auto hover:bg-primary/5 hover:text-primary transition-colors duration-200 rounded-xl">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-label-md font-label-md">Settings</span>
+</a>
+</nav>
+<div class="p-4 border-t border-outline-variant/20 flex items-center gap-3">
+<img class="w-10 h-10 rounded-full border-2 border-primary-container object-cover" alt="University Librarian" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAEBGZ_nN-EAxvv9e7zmRy3dgQ_nrfW80rpPjd8H4zZ2OVEccW7oIomkp-PZtUUBl_ZaMaWmkxvM7-PQdH2ZyYsJq5_NUAw3A6175Lak7Qb8wNfPAX_eHMTSlfxZ9-C8XUddwUss2qeFpckR2kVyYM3h31RCRvhWVHctt0L9Cv5g8AUD27R7Y_OwyxXey9XiKTqelB8_kBajgUjm2wnWgHyIJ62ob-6RhEwh73VoiEWzzKz0U-EEqSWg_XVFfBCHx_A2Tm0mxLdzg">
+<div class="flex flex-col">
+<span class="text-label-md font-label-md text-white" id="sidebar-profile-name">University Librarian</span>
+<span class="text-label-sm font-label-sm text-surface-variant/70" id="sidebar-profile-role">Administrator</span>
+</div>
+</div>
+</aside>
+<!-- Main Canvas -->
+<main class="flex-1 lg:ml-[280px] min-h-screen flex flex-col relative bg-background">
+<!-- TopNavBar (Shared Component) -->
+<header class="flex justify-between items-center px-container-padding w-full sticky top-0 z-40 bg-surface/80 backdrop-blur-md h-[72px] border-b border-outline-variant">
+<div class="flex items-center gap-4 flex-1">
+<button class="lg:hidden p-2 text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div class="relative w-full max-w-md hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="w-full bg-surface-container-low border-none rounded-2xl pl-10 pr-4 py-2 focus:ring-2 focus:ring-primary transition-all text-body-sm font-body-sm" id="directorySearch" placeholder="Search by name or student ID..." type="text">
+</div>
+</div>
+<div class="flex items-center gap-stack-md">
+<span class="text-title-lg font-title-lg font-bold text-primary hidden md:block">Academic Resource Center</span>
+<div class="flex items-center gap-3">
+<button class="p-2 text-on-surface-variant hover:bg-surface-container-low rounded-full transition-all">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:bg-surface-container-low rounded-full transition-all">
+<span class="material-symbols-outlined">help_outline</span>
+</button>
+<div class="w-px h-6 bg-outline-variant mx-1"></div>
+<div class="flex items-center gap-3 pl-2 h-full">
+<div class="text-right hidden sm:block">
+<p class="text-label-md font-label-md text-on-surface leading-tight" id="header-profile-name">University Librarian</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant leading-tight" id="header-profile-role">Administrator</p>
+</div>
+<img class="w-10 h-10 rounded-full border-2 border-primary-container object-cover cursor-pointer hover:opacity-90 transition-all" alt="University Librarian" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAEBGZ_nN-EAxvv9e7zmRy3dgQ_nrfW80rpPjd8H4zZ2OVEccW7oIomkp-PZtUUBl_ZaMaWmkxvM7-PQdH2ZyYsJq5_NUAw3A6175Lak7Qb8wNfPAX_eHMTSlfxZ9-C8XUddwUss2qeFpckR2kVyYM3h31RCRvhWVHctt0L9Cv5g8AUD27R7Y_OwyxXey9XiKTqelB8_kBajgUjm2wnWgHyIJ62ob-6RhEwh73VoiEWzzKz0U-EEqSWg_XVFfBCHx_A2Tm0mxLdzg">
+</div>
+</div>
+</div>
+</header>
+<!-- Page Content -->
+<div class="p-container-padding flex-1 flex flex-col gap-stack-lg max-w-7xl mx-auto w-full">
+<!-- Page Header -->
+<section class="flex flex-col md:flex-row md:items-center justify-between gap-4 items-center">
+<div>
+<h1 class="text-headline-md font-headline-md text-on-surface">Student Directory</h1>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Manage and maintain academic records for all enrolled students.</p>
+</div>
+<button class="flex items-center justify-center gap-2 bg-primary text-on-primary px-6 py-3 rounded-2xl shadow-lg hover:shadow-xl active:scale-95 transition-all" onclick="toggleModal('addStudentModal')">
+<span class="material-symbols-outlined">person_add</span>
+<span class="text-label-md font-label-md">Add New Student</span>
+</button>
+</section>
+<!-- Content Bento Grid / Table Card -->
+<div class="bg-surface-container-lowest rounded-2xl soft-shadow overflow-hidden border border-outline-variant/10 p-2">
+<div class="overflow-x-auto">
+<table class="w-full border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-left border-b border-outline-variant">
+<th class="px-6 py-4 text-label-md font-label-md text-on-surface-variant uppercase tracking-wider font-bold">Student ID</th>
+<th class="px-6 py-4 text-label-md font-label-md text-on-surface-variant uppercase tracking-wider font-bold">Name</th>
+<th class="px-6 py-4 text-label-md font-label-md text-on-surface-variant uppercase tracking-wider font-bold">Department</th>
+<th class="px-6 py-4 text-label-md font-label-md text-on-surface-variant uppercase tracking-wider font-bold">Semester</th>
+<th class="px-6 py-4 text-label-md font-label-md text-on-surface-variant uppercase tracking-wider font-bold">Phone</th>
+<th class="px-6 py-4 text-right text-label-md font-label-md text-on-surface-variant uppercase tracking-wider font-bold">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/30 bg-surface-container-lowest" id="studentTableBody">
+<!-- Dynamic Content from LocalStorage -->
+</tbody>
+</table>
+</div>
+<!-- Empty State (Hidden if data exists) -->
+<div class="hidden flex-col items-center justify-center py-20" id="emptyState">
+<span class="material-symbols-outlined text-6xl text-outline-variant mb-4">group_off</span>
+<p class="text-title-lg font-title-lg text-on-surface-variant">No students found</p>
+<p class="text-body-sm font-body-sm text-outline">Start by adding a new student to the directory.</p>
+</div>
+</div>
+<!-- Footer (Shared Component) -->
+<footer class="flex justify-between items-center py-4 mt-auto border-t border-outline-variant">
+<span class="text-label-md font-label-md font-bold text-on-surface">UniLibrary</span>
+<div class="flex gap-4">
+<span class="text-label-sm font-label-sm text-on-surface-variant">v1.2.4</span>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Documentation</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Support</a>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface-variant">© 2024 UniLibrary System. All Rights Reserved.</span>
+</footer>
+</div>
+</main>
+</div>
+<!-- Modals -->
+<!-- Add Student Modal -->
+<div class="fixed inset-0 z-[60] hidden overflow-y-auto" id="addStudentModal">
+<div class="flex min-h-screen items-center justify-center p-4">
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm transition-opacity" onclick="toggleModal('addStudentModal')"></div>
+<div class="relative bg-surface rounded-2xl shadow-2xl w-full max-w-lg p-8 transform transition-all border border-outline-variant/20">
+<div class="flex justify-between items-center mb-6">
+<h2 class="text-headline-md font-headline-md text-on-surface">Add New Student</h2>
+<button class="p-2 hover:bg-surface-container-high rounded-full transition-all" onclick="toggleModal('addStudentModal')">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<form class="grid grid-cols-1 gap-6" id="addStudentForm">
+<div class="space-y-2">
+<label class="text-label-md font-label-md text-on-surface">Full Name</label>
+<input class="w-full bg-surface-container-low border-outline-variant/30 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-primary transition-all" name="name" required="" type="text">
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="text-label-md font-label-md text-on-surface">Student ID</label>
+<input class="w-full bg-surface-container-low border-outline-variant/30 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-primary transition-all" name="id" required="" type="text">
+</div>
+<div class="space-y-2">
+<label class="text-label-md font-label-md text-on-surface">Department</label>
+<select class="w-full bg-surface-container-low border-outline-variant/30 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-primary transition-all" name="department">
+<option>Computer Science</option>
+<option>Business Admin</option>
+<option>Engineering</option>
+<option>Arts &amp; Design</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="text-label-md font-label-md text-on-surface">Semester</label>
+<input class="w-full bg-surface-container-low border-outline-variant/30 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-primary transition-all" max="12" min="1" name="semester" required="" type="number" value="1">
+</div>
+<div class="space-y-2">
+<label class="text-label-md font-label-md text-on-surface">Phone Number</label>
+<input class="w-full bg-surface-container-low border-outline-variant/30 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-primary transition-all" name="phone" required="" type="tel">
+</div>
+</div>
+<div class="flex gap-4 mt-4">
+<button class="flex-1 px-6 py-3 rounded-xl border border-outline-variant text-on-surface hover:bg-surface-container-low transition-all" onclick="toggleModal('addStudentModal')" type="button">Cancel</button>
+<button class="flex-1 px-6 py-3 rounded-xl bg-primary text-on-primary font-bold shadow-md hover:shadow-lg active:scale-95 transition-all" type="submit">Save Student</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!-- Edit Student Modal (Mirroring the layout of Add for consistency) -->
+<div class="fixed inset-0 z-[60] hidden overflow-y-auto" id="editStudentModal">
+<div class="flex min-h-screen items-center justify-center p-4">
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm" onclick="toggleModal('editStudentModal')"></div>
+<div class="relative bg-surface rounded-2xl shadow-2xl w-full max-w-lg p-8 border border-outline-variant/20">
+<div class="flex justify-between items-center mb-6">
+<h2 class="text-headline-md font-headline-md text-on-surface">Edit Student Record</h2>
+<button class="p-2 hover:bg-surface-container-high rounded-full" onclick="toggleModal('editStudentModal')">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<form class="grid grid-cols-1 gap-6" id="editStudentForm">
+<input name="originalId" type="hidden">
+<div class="space-y-2">
+<label class="text-label-md font-label-md text-on-surface">Full Name</label>
+<input class="w-full bg-surface-container-low border-outline-variant/30 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary transition-all" name="name" required="" type="text">
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="text-label-md font-label-md text-on-surface">Student ID</label>
+<input class="w-full bg-surface-container-low border-outline-variant/30 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary transition-all" name="id" required="" type="text">
+</div>
+<div class="space-y-2">
+<label class="text-label-md font-label-md text-on-surface">Department</label>
+<select class="w-full bg-surface-container-low border-outline-variant/30 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary transition-all" name="department">
+<option>Computer Science</option>
+<option>Business Admin</option>
+<option>Engineering</option>
+<option>Arts &amp; Design</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="text-label-md font-label-md text-on-surface">Semester</label>
+<input class="w-full bg-surface-container-low border-outline-variant/30 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary transition-all" max="12" min="1" name="semester" type="number">
+</div>
+<div class="space-y-2">
+<label class="text-label-md font-label-md text-on-surface">Phone Number</label>
+<input class="w-full bg-surface-container-low border-outline-variant/30 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary transition-all" name="phone" type="tel">
+</div>
+</div>
+<div class="flex gap-4 mt-4">
+<button class="flex-1 px-6 py-3 rounded-xl border border-outline-variant text-on-surface" onclick="toggleModal('editStudentModal')" type="button">Cancel</button>
+<button class="flex-1 px-6 py-3 rounded-xl bg-primary text-on-primary font-bold transition-all active:scale-95" type="submit">Update Student</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!-- Logic Script -->
+<script>
+        const STORAGE_KEY = 'unilibrary_students';
+        
+        // Initial Data if empty
+        const initialStudents = [
+            { id: "STU-2024-001", name: "Alexander Pierce", department: "Computer Science", semester: 6, phone: "+1-555-0101" },
+            { id: "STU-2024-042", name: "Sarah Jenkins", department: "Business Admin", semester: 4, phone: "+1-555-0212" },
+            { id: "STU-2023-118", name: "David Chen", department: "Engineering", semester: 8, phone: "+1-555-0345" },
+            { id: "STU-2024-055", name: "Emily Watson", department: "Arts & Design", semester: 2, phone: "+1-555-0567" }
+        ];
+
+        function getStudents() {
+            const data = localStorage.getItem(STORAGE_KEY);
+            return data ? JSON.parse(data) : initialStudents;
+        }
+
+        function saveStudents(students) {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(students));
+            renderTable();
+        }
+
+        function toggleModal(id) {
+            const modal = document.getElementById(id);
+            modal.classList.toggle('hidden');
+            if (!modal.classList.contains('hidden')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        window.renderTable = renderTable;
+        function renderTable(searchTerm = "") {
+            const students = getStudents();
+            const tableBody = document.getElementById('studentTableBody');
+            const emptyState = document.getElementById('emptyState');
+            
+            const filtered = students.filter(s => 
+                s.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
+                s.id.toLowerCase().includes(searchTerm.toLowerCase())
+            );
+
+            tableBody.innerHTML = "";
+            
+            if (filtered.length === 0) {
+                emptyState.classList.remove('hidden');
+                return;
+            } else {
+                emptyState.classList.add('hidden');
+            }
+
+            filtered.forEach(student => {
+                const row = document.createElement('tr');
+                row.className = "hover:bg-surface-container/50 transition-colors group";
+                row.innerHTML = `
+                    <td class="px-6 py-4 text-body-sm font-body-sm text-on-surface-variant">${student.id}</td>
+                    <td class="px-6 py-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-xs">
+                                ${student.name.charAt(0)}
+                            </div>
+                            <span class="text-body-base font-label-md text-on-surface">${student.name}</span>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4 text-body-sm font-body-sm text-on-surface-variant">${student.department}</td>
+                    <td class="px-6 py-4">
+                        <span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold">
+                            Sem ${student.semester}
+                        </span>
+                    </td>
+                    <td class="px-6 py-4 text-body-sm font-body-sm text-on-surface-variant">${student.phone}</td>
+                    <td class="px-6 py-4 text-right">
+                        <div class="flex items-center justify-end gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button onclick="openEditModal('${student.id}')" class="p-2 text-primary hover:bg-primary-container/20 rounded-lg transition-all">
+                                <span class="material-symbols-outlined">edit</span>
+                            </button>
+                            <button onclick="deleteStudent('${student.id}')" class="p-2 text-error hover:bg-error-container/20 rounded-lg transition-all">
+                                <span class="material-symbols-outlined">delete</span>
+                            </button>
+                        </div>
+                    </td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+
+        // Add Student logic
+        document.getElementById('addStudentForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const newStudent = {
+                id: formData.get('id'),
+                name: formData.get('name'),
+                department: formData.get('department'),
+                semester: parseInt(formData.get('semester')),
+                phone: formData.get('phone')
+            };
+
+            const students = getStudents();
+            students.unshift(newStudent);
+            saveStudents(students);
+            e.target.reset();
+            toggleModal('addStudentModal');
+        });
+
+        // Edit Student logic
+        function openEditModal(id) {
+            const students = getStudents();
+            const student = students.find(s => s.id === id);
+            if (!student) return;
+
+            const form = document.getElementById('editStudentForm');
+            form.originalId.value = student.id;
+            form.name.value = student.name;
+            form.id.value = student.id;
+            form.department.value = student.department;
+            form.semester.value = student.semester;
+            form.phone.value = student.phone;
+
+            toggleModal('editStudentModal');
+        }
+
+        document.getElementById('editStudentForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const originalId = formData.get('originalId');
+            
+            const students = getStudents();
+            const index = students.findIndex(s => s.id === originalId);
+            
+            if (index !== -1) {
+                students[index] = {
+                    id: formData.get('id'),
+                    name: formData.get('name'),
+                    department: formData.get('department'),
+                    semester: parseInt(formData.get('semester')),
+                    phone: formData.get('phone')
+                };
+                saveStudents(students);
+            }
+            toggleModal('editStudentModal');
+        });
+
+        function deleteStudent(id) {
+            if (confirm(`Are you sure you want to delete student ${id}?`)) {
+                const students = getStudents();
+                const filtered = students.filter(s => s.id !== id);
+                saveStudents(filtered);
+            }
+        }
+
+        // Search logic
+        document.getElementById('directorySearch').addEventListener('input', (e) => {
+            renderTable(e.target.value);
+        });
+
+        // Initial Load
+        window.addEventListener('DOMContentLoaded', () => {
+            if (!localStorage.getItem(STORAGE_KEY)) {
+                saveStudents(initialStudents);
+            } else {
+                renderTable();
+            }
+
+            // Apply a custom profile name/role (set on the Settings page) if one is saved.
+            const savedProfile = JSON.parse(localStorage.getItem('unilibrary_profile') || 'null');
+            if (savedProfile) {
+                const nameEl1 = document.getElementById('sidebar-profile-name');
+                const roleEl1 = document.getElementById('sidebar-profile-role');
+                const nameEl2 = document.getElementById('header-profile-name');
+                const roleEl2 = document.getElementById('header-profile-role');
+                if (nameEl1) nameEl1.textContent = savedProfile.name;
+                if (roleEl1) roleEl1.textContent = savedProfile.role;
+                if (nameEl2) nameEl2.textContent = savedProfile.name;
+                if (roleEl2) roleEl2.textContent = savedProfile.role;
+            }
+        });
+    </script>
+
+</body></html>

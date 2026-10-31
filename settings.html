@@ -1,0 +1,438 @@
+<!DOCTYPE html><html class="light" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-container": "#54647a",
+                      "primary": "#004ac6",
+                      "primary-fixed-dim": "#b4c5ff",
+                      "surface-variant": "#d8e3fb",
+                      "error": "#ba1a1a",
+                      "surface-bright": "#f9f9ff",
+                      "on-primary-fixed-variant": "#003ea8",
+                      "on-secondary-fixed": "#0b1c30",
+                      "inverse-surface": "#263143",
+                      "tertiary-fixed-dim": "#c4c7c9",
+                      "surface-container-high": "#dee8ff",
+                      "primary-fixed": "#dbe1ff",
+                      "on-background": "#111c2d",
+                      "surface-container": "#e7eeff",
+                      "outline-variant": "#c3c6d7",
+                      "primary-container": "#2563eb",
+                      "on-error-container": "#93000a",
+                      "on-error": "#ffffff",
+                      "secondary-container": "#d0e1fb",
+                      "inverse-primary": "#b4c5ff",
+                      "on-tertiary-fixed": "#191c1e",
+                      "on-primary-fixed": "#00174b",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-container": "#eff1f3",
+                      "tertiary-fixed": "#e0e3e5",
+                      "surface-container-highest": "#d8e3fb",
+                      "surface-tint": "#0053db",
+                      "on-surface-variant": "#434655",
+                      "secondary-fixed": "#d3e4fe",
+                      "surface": "#f9f9ff",
+                      "secondary": "#505f76",
+                      "on-primary": "#ffffff",
+                      "tertiary": "#525657",
+                      "on-secondary-fixed-variant": "#38485d",
+                      "on-surface": "#111c2d",
+                      "on-secondary": "#ffffff",
+                      "on-primary-container": "#eeefff",
+                      "on-tertiary": "#ffffff",
+                      "on-tertiary-fixed-variant": "#444749",
+                      "surface-container-low": "#f0f3ff",
+                      "secondary-fixed-dim": "#b7c8e1",
+                      "inverse-on-surface": "#ecf1ff",
+                      "surface-dim": "#cfdaf2",
+                      "background": "#f9f9ff",
+                      "outline": "#737686",
+                      "tertiary-container": "#6b6e70",
+                      "error-container": "#ffdad6"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "2xl": "1rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "stack-gap-lg": "32px",
+                      "stack-gap-md": "20px",
+                      "base": "4px",
+                      "gutter": "16px",
+                      "sidebar-width": "280px",
+                      "navbar-height": "72px",
+                      "stack-gap-sm": "12px",
+                      "container-padding": "24px"
+              },
+              "fontFamily": {
+                      "body-sm": ["Poppins"],
+                      "label-md": ["Poppins"],
+                      "display-lg": ["Poppins"],
+                      "body-base": ["Poppins"],
+                      "label-sm": ["Poppins"],
+                      "headline-md": ["Poppins"],
+                      "title-lg": ["Poppins"],
+                      "display-lg-mobile": ["Poppins"]
+              },
+              "fontSize": {
+                      "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                      "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+                      "display-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-base": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                      "display-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+    }catch(_e){}</script>    <script src="storage.js"></script>
+</head><body class="bg-background text-on-surface">
+    <!-- SIDE BAR NAVIGATION -->
+    <aside class="fixed left-0 top-0 h-full w-[280px] bg-inverse-surface dark:bg-inverse-surface shadow-md hidden lg:flex flex-col z-50" id="main-sidebar">
+        <div class="p-6 flex flex-col gap-2">
+            <div class="text-white text-title-lg font-title-lg font-bold">UniLibrary</div>
+            <div class="text-on-secondary-container text-label-sm font-label-sm opacity-80">LMS Admin v1.2</div>
+        </div>
+        <nav class="mt-4 flex-grow flex flex-col px-4 gap-1">
+            <a class="flex items-center gap-3 text-on-secondary-container dark:text-surface-variant py-3 px-4 hover:bg-primary/10 hover:text-primary-fixed-dim transition-all-custom rounded-lg" href="index.html">
+                <span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+                <span class="text-label-md font-label-md">Dashboard</span>
+            </a>
+            <a class="flex items-center gap-3 text-on-secondary-container dark:text-surface-variant py-3 px-4 hover:bg-primary/10 hover:text-primary-fixed-dim transition-all-custom rounded-lg" href="books.html">
+                <span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+                <span class="text-label-md font-label-md">Books</span>
+            </a>
+            <a class="flex items-center gap-3 text-on-secondary-container dark:text-surface-variant py-3 px-4 hover:bg-primary/10 hover:text-primary-fixed-dim transition-all-custom rounded-lg" href="students.html">
+                <span class="material-symbols-outlined" data-icon="group">group</span>
+                <span class="text-label-md font-label-md">Students</span>
+            </a>
+            <a class="flex items-center gap-3 text-on-secondary-container dark:text-surface-variant py-3 px-4 hover:bg-primary/10 hover:text-primary-fixed-dim transition-all-custom rounded-lg" href="issue.html">
+                <span class="material-symbols-outlined" data-icon="assignment_turned_in">assignment_turned_in</span>
+                <span class="text-label-md font-label-md">Issue Book</span>
+            </a>
+            <a class="flex items-center gap-3 text-on-secondary-container dark:text-surface-variant py-3 px-4 hover:bg-primary/10 hover:text-primary-fixed-dim transition-all-custom rounded-lg" href="return.html">
+                <span class="material-symbols-outlined" data-icon="assignment_return">assignment_return</span>
+                <span class="text-label-md font-label-md">Return Book</span>
+            </a>
+            <a class="mt-auto flex items-center gap-3 bg-primary/10 border-l-4 border-primary text-primary-fixed-dim py-3 px-4 transition-all-custom rounded-r-lg" href="settings.html">
+                <span class="material-symbols-outlined" data-icon="settings">settings</span>
+                <span class="text-label-md font-label-md">Settings</span>
+            </a>
+        </nav>
+        <div class="p-4 border-t border-white/10 flex items-center gap-3">
+            <img class="w-10 h-10 rounded-full border-2 border-primary-container object-cover" alt="University Librarian" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAEBGZ_nN-EAxvv9e7zmRy3dgQ_nrfW80rpPjd8H4zZ2OVEccW7oIomkp-PZtUUBl_ZaMaWmkxvM7-PQdH2ZyYsJq5_NUAw3A6175Lak7Qb8wNfPAX_eHMTSlfxZ9-C8XUddwUss2qeFpckR2kVyYM3h31RCRvhWVHctt0L9Cv5g8AUD27R7Y_OwyxXey9XiKTqelB8_kBajgUjm2wnWgHyIJ62ob-6RhEwh73VoiEWzzKz0U-EEqSWg_XVFfBCHx_A2Tm0mxLdzg">
+            <div class="flex flex-col">
+                <span class="text-label-md font-label-md text-white" id="sidebar-profile-name">University Librarian</span>
+                <span class="text-label-sm font-label-sm text-white/60" id="sidebar-profile-role">Administrator</span>
+            </div>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT WRAPPER -->
+    <div class="lg:ml-[280px] min-h-screen flex flex-col">
+        <!-- TOP NAVIGATION BAR -->
+        <header class="flex justify-between items-center px-gutter w-full sticky top-0 z-40 bg-surface/80 backdrop-blur-md h-[72px] border-b border-outline-variant">
+            <div class="flex items-center gap-4 flex-grow max-w-2xl">
+                <div class="lg:hidden">
+                    <button class="p-2 text-primary hover:bg-primary/5 rounded-full transition-all">
+                        <span class="material-symbols-outlined" data-icon="menu">menu</span>
+                    </button>
+                </div>
+                <div class="text-title-lg font-title-lg font-bold text-primary dark:text-primary-fixed-dim">Academic Resource Center</div>
+                <div class="hidden md:flex flex-grow ml-8 max-w-md bg-surface-container-low rounded-full px-4 py-2 items-center gap-2 group focus-within:ring-2 focus-within:ring-primary transition-all">
+                    <span class="material-symbols-outlined text-outline" data-icon="search">search</span>
+                    <input class="bg-transparent border-none focus:ring-0 text-body-sm font-body-sm w-full" placeholder="Search resources, books, or students..." type="text">
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <button class="p-2 text-on-surface-variant hover:bg-surface-container-low rounded-full transition-all-custom active:opacity-80">
+                    <span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+                </button>
+                <button class="p-2 text-on-surface-variant hover:bg-surface-container-low rounded-full transition-all-custom active:opacity-80">
+                    <span class="material-symbols-outlined" data-icon="help_outline">help_outline</span>
+                </button>
+                <div class="h-8 w-px bg-outline-variant mx-1"></div>
+                <div class="flex items-center gap-3 pl-2 h-full">
+                    <div class="text-right hidden sm:block">
+                        <p class="text-label-md font-label-md text-on-surface leading-tight" id="header-profile-name">University Librarian</p>
+                        <p class="text-label-sm font-label-sm text-on-surface-variant leading-tight" id="header-profile-role">Administrator</p>
+                    </div>
+                    <img class="w-10 h-10 rounded-full border-2 border-primary-container object-cover cursor-pointer hover:opacity-90 transition-all" data-alt="University librarian profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAEBGZ_nN-EAxvv9e7zmRy3dgQ_nrfW80rpPjd8H4zZ2OVEccW7oIomkp-PZtUUBl_ZaMaWmkxvM7-PQdH2ZyYsJq5_NUAw3A6175Lak7Qb8wNfPAX_eHMTSlfxZ9-C8XUddwUss2qeFpckR2kVyYM3h31RCRvhWVHctt0L9Cv5g8AUD27R7Y_OwyxXey9XiKTqelB8_kBajgUjm2wnWgHyIJ62ob-6RhEwh73VoiEWzzKz0U-EEqSWg_XVFfBCHx_A2Tm0mxLdzg">
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN DASHBOARD CONTENT -->
+        <main class="flex-grow p-gutter md:p-stack-gap-lg overflow-x-hidden">
+            <!-- PAGE HEADER -->
+            <section class="mb-stack-gap-lg fade-in-up" style="animation-delay: 0.1s;">
+                <h1 class="text-headline-md font-headline-md text-on-surface mb-1">Settings</h1>
+                <p class="text-body-sm font-body-sm text-on-surface-variant">Manage your profile, review live library data, and control the demo data stored in this browser.</p>
+            </section>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-stack-gap-lg">
+                <!-- LEFT COLUMN (8 cols) -->
+                <div class="lg:col-span-8 flex flex-col gap-stack-gap-lg">
+                                        <!-- CLOUD DATABASE CONNECTION (FIREBASE) -->
+                    <section class="bg-surface-container-lowest rounded-2xl shadow-[0_25px_50px_-12px_rgba(0,0,0,0.05)] p-6 border border-outline-variant fade-in-up" style="animation-delay: 0.15s;">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-1">
+                            <h2 class="text-headline-md font-headline-md text-on-surface">Connect Database</h2>
+                            <span id="settings-cloud-status-badge" class="px-3 py-1 rounded-full border text-xs font-semibold">Checking...</span>
+                        </div>
+                        <p class="text-body-sm font-body-sm text-on-surface-variant mb-4">Paste your Firebase Realtime Database link below to connect.</p>
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <input id="settingsFirebaseUrl" type="url" placeholder="https://your-project-default-rtdb.firebaseio.com" class="flex-1 px-4 py-2.5 bg-surface-container-low border border-outline-variant rounded-xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all text-body-sm font-body-sm">
+                            <button type="button" id="settingsConnectFirebaseBtn" class="px-6 py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-md hover:shadow-lg transition-all active:scale-95 whitespace-nowrap">Connect</button>
+                        </div>
+                    </section>
+
+                    <!-- PROFILE SETTINGS -->
+                    <section class="bg-surface-container-lowest rounded-2xl shadow-[0_25px_50px_-12px_rgba(0,0,0,0.05)] p-6 fade-in-up" style="animation-delay: 0.2s;">
+                        <h2 class="text-headline-md font-headline-md text-on-surface mb-1">Profile</h2>
+                        <p class="text-body-sm font-body-sm text-on-surface-variant mb-6">This name and role appear in the sidebar and top bar across every page.</p>
+                        <form id="profileForm" class="flex flex-col gap-4">
+                            <div class="flex items-center gap-4">
+                                <img class="w-16 h-16 rounded-full border-2 border-primary-container object-cover" alt="University Librarian" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAEBGZ_nN-EAxvv9e7zmRy3dgQ_nrfW80rpPjd8H4zZ2OVEccW7oIomkp-PZtUUBl_ZaMaWmkxvM7-PQdH2ZyYsJq5_NUAw3A6175Lak7Qb8wNfPAX_eHMTSlfxZ9-C8XUddwUss2qeFpckR2kVyYM3h31RCRvhWVHctt0L9Cv5g8AUD27R7Y_OwyxXey9XiKTqelB8_kBajgUjm2wnWgHyIJ62ob-6RhEwh73VoiEWzzKz0U-EEqSWg_XVFfBCHx_A2Tm0mxLdzg">
+                                <div class="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-label-sm font-label-sm text-on-surface-variant mb-1.5">Display Name</label>
+                                        <input id="profileName" class="w-full px-4 py-2.5 bg-surface-container-low border border-outline-variant rounded-xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all text-body-base font-body-base" type="text" required>
+                                    </div>
+                                    <div>
+                                        <label class="block text-label-sm font-label-sm text-on-surface-variant mb-1.5">Role</label>
+                                        <input id="profileRole" class="w-full px-4 py-2.5 bg-surface-container-low border border-outline-variant rounded-xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all text-body-base font-body-base" type="text" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3 pt-2">
+                                <button type="submit" class="px-6 py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-md hover:shadow-lg transition-all active:scale-95">Save Profile</button>
+                                <span id="profileSavedMsg" class="text-label-sm font-label-sm text-green-600 opacity-0 transition-opacity">Saved — now showing on every page.</span>
+                            </div>
+                        </form>
+                    </section>
+
+                    <!-- DATA MANAGEMENT -->
+                    <section class="bg-surface-container-lowest rounded-2xl shadow-[0_25px_50px_-12px_rgba(0,0,0,0.05)] p-6 fade-in-up" style="animation-delay: 0.3s;">
+                        <h2 class="text-headline-md font-headline-md text-on-surface mb-1">Data Management</h2>
+                        <p class="text-body-sm font-body-sm text-on-surface-variant mb-6">This demo stores all books, students, and transactions in your browser's local storage — no server is involved.</p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <div class="flex-1 border border-outline-variant rounded-xl p-4 flex flex-col gap-2">
+                                <div class="flex items-center gap-2 text-on-surface">
+                                    <span class="material-symbols-outlined text-primary">download</span>
+                                    <span class="text-label-md font-label-md">Export Data</span>
+                                </div>
+                                <p class="text-label-sm font-label-sm text-on-surface-variant">Download all books, students, and transactions as a JSON file.</p>
+                                <button id="exportDataBtn" class="mt-auto self-start px-4 py-2 rounded-lg border border-outline-variant text-on-surface font-label-md text-label-sm hover:bg-surface-container-low transition-all">Export as JSON</button>
+                            </div>
+                            <div class="flex-1 border border-error/30 rounded-xl p-4 flex flex-col gap-2">
+                                <div class="flex items-center gap-2 text-error">
+                                    <span class="material-symbols-outlined">restart_alt</span>
+                                    <span class="text-label-md font-label-md">Reset Demo Data</span>
+                                </div>
+                                <p class="text-label-sm font-label-sm text-on-surface-variant">Clear everything you've added and restore the original sample books, students, and loans.</p>
+                                <button id="resetDataBtn" class="mt-auto self-start px-4 py-2 rounded-lg bg-error/10 text-error font-label-md text-label-sm hover:bg-error/20 transition-all">Reset to Defaults</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- RIGHT COLUMN (4 cols) -->
+                <div class="lg:col-span-4 flex flex-col gap-stack-gap-lg">
+                    <!-- LIVE LIBRARY OVERVIEW -->
+                    <section class="bg-surface-container p-6 rounded-2xl shadow-sm border border-outline-variant fade-in-up" style="animation-delay: 0.4s;">
+                        <h3 class="text-title-lg font-title-lg text-on-surface mb-4">Library Overview</h3>
+                        <div class="flex flex-col gap-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-label-sm font-label-sm text-on-surface-variant">Total Books</span>
+                                <span class="text-label-md font-label-md text-on-surface" id="settings-stat-books">0</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-label-sm font-label-sm text-on-surface-variant">Total Students</span>
+                                <span class="text-label-md font-label-md text-on-surface" id="settings-stat-students">0</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-label-sm font-label-sm text-on-surface-variant">Active Loans</span>
+                                <span class="text-label-md font-label-md text-on-surface" id="settings-stat-active">0</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-label-sm font-label-sm text-on-surface-variant">Overdue</span>
+                                <span class="text-label-md font-label-md text-error" id="settings-stat-overdue">0</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ABOUT -->
+                    <section class="bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant p-6 fade-in-up" style="animation-delay: 0.5s;">
+                        <h3 class="text-title-lg font-title-lg text-on-surface mb-4">About</h3>
+                        <div class="flex flex-col gap-3 text-body-sm font-body-sm text-on-surface-variant">
+                            <div class="flex items-center justify-between">
+                                <span>Version</span>
+                                <span class="text-on-surface font-medium">v1.2.4</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span>System</span>
+                                <span class="text-on-surface font-medium">UniLibrary LMS</span>
+                            </div>
+                            <p class="pt-2 border-t border-outline-variant">A static, browser-only library management system. All data lives in this browser's local storage.</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="flex justify-between items-center px-gutter py-4 mt-auto bg-surface-container-lowest border-t border-outline-variant">
+            <div class="text-on-surface text-label-md font-label-md font-bold">UniLibrary</div>
+            <div class="text-on-surface-variant text-label-sm font-label-sm">© 2024 UniLibrary System. All Rights Reserved.</div>
+            <div class="hidden sm:flex gap-4">
+                <a class="text-on-surface-variant text-label-sm font-label-sm hover:text-primary transition-colors" href="#">v1.2.4</a>
+                <a class="text-on-surface-variant text-label-sm font-label-sm hover:text-primary transition-colors" href="#">Documentation</a>
+                <a class="text-on-surface-variant text-label-sm font-label-sm hover:text-primary transition-colors" href="#">Support</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- SETTINGS PAGE LOGIC -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const LIB_KEYS = { BOOKS: 'unilibrary_books', STUDENTS: 'unilibrary_students', ISSUED: 'unilibrary_issued', STATS: 'unilibrary_stats' };
+            const PROFILE_KEY = 'unilibrary_profile';
+            const DEFAULT_PROFILE = { name: 'University Librarian', role: 'Administrator' };
+
+            const DEFAULT_BOOKS = [
+                { id: 'LIB-1001', title: 'Introduction to Algorithms', author: 'Thomas H. Cormen', category: 'Computer Science', quantity: 12 },
+                { id: 'LIB-1002', title: 'The Art of Computer Programming', author: 'Donald Knuth', category: 'Computer Science', quantity: 5 },
+                { id: 'LIB-1003', title: 'Calculus: Early Transcendentals', author: 'James Stewart', category: 'Mathematics', quantity: 20 },
+                { id: 'LIB-1004', title: 'University Physics', author: 'Hugh D. Young', category: 'Physics', quantity: 15 },
+                { id: 'LIB-1005', title: 'Clean Code', author: 'Robert C. Martin', category: 'Computer Science', quantity: 8 },
+                { id: 'LIB-1006', title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', category: 'Literature', quantity: 25 }
+            ];
+            const DEFAULT_STUDENTS = [
+                { id: 'STU-2024-001', name: 'Alexander Pierce', department: 'Computer Science', semester: 6, phone: '+1-555-0101' },
+                { id: 'STU-2024-042', name: 'Sarah Jenkins', department: 'Business Admin', semester: 4, phone: '+1-555-0212' },
+                { id: 'STU-2023-118', name: 'David Chen', department: 'Engineering', semester: 8, phone: '+1-555-0345' },
+                { id: 'STU-2024-055', name: 'Emily Watson', department: 'Arts & Design', semester: 2, phone: '+1-555-0567' }
+            ];
+            const DEFAULT_ISSUED = [
+                { id: 'TX-8821', studentId: 'STU-2024-001', studentName: 'Alexander Pierce', bookId: 'LIB-1006', bookTitle: 'The Great Gatsby', issueDate: '2023-10-12', dueDate: '2023-10-26', status: 'Overdue' },
+                { id: 'TX-8845', studentId: 'STU-2024-042', studentName: 'Sarah Jenkins', bookId: 'LIB-1001', bookTitle: 'Introduction to Algorithms', issueDate: '2023-11-01', dueDate: '2023-11-15', status: 'Issued' },
+                { id: 'TX-8902', studentId: 'STU-2023-118', studentName: 'David Chen', bookId: 'LIB-1005', bookTitle: 'Clean Code', issueDate: '2023-11-05', dueDate: '2023-11-19', status: 'Issued' }
+            ];
+            const DEFAULT_STATS = { returnedToday: 28 };
+
+            if (!localStorage.getItem(LIB_KEYS.BOOKS)) localStorage.setItem(LIB_KEYS.BOOKS, JSON.stringify(DEFAULT_BOOKS));
+            if (!localStorage.getItem(LIB_KEYS.STUDENTS)) localStorage.setItem(LIB_KEYS.STUDENTS, JSON.stringify(DEFAULT_STUDENTS));
+            if (!localStorage.getItem(LIB_KEYS.ISSUED)) localStorage.setItem(LIB_KEYS.ISSUED, JSON.stringify(DEFAULT_ISSUED));
+            if (!localStorage.getItem(LIB_KEYS.STATS)) localStorage.setItem(LIB_KEYS.STATS, JSON.stringify(DEFAULT_STATS));
+
+            // --- Profile: load into the form, apply saved values to header/sidebar, handle Save ---
+            function getProfile() {
+                return JSON.parse(localStorage.getItem(PROFILE_KEY) || 'null') || DEFAULT_PROFILE;
+            }
+
+            function applyProfileToChrome(profile) {
+                ['sidebar-profile-name', 'header-profile-name'].forEach(id => {
+                    const el = document.getElementById(id);
+                    if (el) el.textContent = profile.name;
+                });
+                ['sidebar-profile-role', 'header-profile-role'].forEach(id => {
+                    const el = document.getElementById(id);
+                    if (el) el.textContent = profile.role;
+                });
+            }
+
+            const currentProfile = getProfile();
+            document.getElementById('profileName').value = currentProfile.name;
+            document.getElementById('profileRole').value = currentProfile.role;
+            applyProfileToChrome(currentProfile);
+
+            document.getElementById('profileForm').addEventListener('submit', (e) => {
+                e.preventDefault();
+                const profile = {
+                    name: document.getElementById('profileName').value.trim() || DEFAULT_PROFILE.name,
+                    role: document.getElementById('profileRole').value.trim() || DEFAULT_PROFILE.role
+                };
+                localStorage.setItem(PROFILE_KEY, JSON.stringify(profile));
+                applyProfileToChrome(profile);
+
+                const msg = document.getElementById('profileSavedMsg');
+                msg.classList.remove('opacity-0');
+                setTimeout(() => msg.classList.add('opacity-0'), 2500);
+            });
+
+            // --- Live Library Overview ---
+            function renderOverview() {
+                const books = JSON.parse(localStorage.getItem(LIB_KEYS.BOOKS)) || [];
+                const students = JSON.parse(localStorage.getItem(LIB_KEYS.STUDENTS)) || [];
+                const issued = JSON.parse(localStorage.getItem(LIB_KEYS.ISSUED)) || [];
+                const overdue = issued.filter(tx => tx.status === 'Overdue').length;
+
+                document.getElementById('settings-stat-books').textContent =
+                    books.reduce((sum, b) => sum + (parseInt(b.quantity) || 0), 0).toLocaleString();
+                document.getElementById('settings-stat-students').textContent = students.length.toLocaleString();
+                document.getElementById('settings-stat-active').textContent = issued.length.toLocaleString();
+                document.getElementById('settings-stat-overdue').textContent = overdue.toLocaleString();
+            }
+            window.renderSettingsOverview = renderOverview;
+            renderOverview();
+
+            // --- Cloud Database Settings Wire-up ---
+            const fbInput = document.getElementById('settingsFirebaseUrl');
+            const fbBtn = document.getElementById('settingsConnectFirebaseBtn');
+            if (fbInput && window.UniLibraryDB) {
+                fbInput.value = window.UniLibraryDB.getDatabaseUrl();
+                window.UniLibraryDB.updateBadgeUI(window.UniLibraryDB.getDatabaseUrl() ? window.UniLibraryDB.status : 'local');
+            }
+            if (fbBtn && window.UniLibraryDB) {
+                fbBtn.addEventListener('click', async () => {
+                    const cleaned = window.UniLibraryDB.setDatabaseUrl(fbInput.value);
+                    fbInput.value = cleaned;
+                    if (cleaned) {
+                        const ok = await window.UniLibraryDB.pullFromCloud(false);
+                        if (ok) window.UniLibraryDB.startPolling();
+                    } else {
+                        window.UniLibraryDB.updateBadgeUI('local');
+                    }
+                });
+            }
+
+            // --- Export Data ---
+            document.getElementById('exportDataBtn').addEventListener('click', () => {
+                const payload = {
+                    exportedAt: new Date().toISOString(),
+                    books: JSON.parse(localStorage.getItem(LIB_KEYS.BOOKS)) || [],
+                    students: JSON.parse(localStorage.getItem(LIB_KEYS.STUDENTS)) || [],
+                    issued: JSON.parse(localStorage.getItem(LIB_KEYS.ISSUED)) || [],
+                    stats: JSON.parse(localStorage.getItem(LIB_KEYS.STATS)) || {}
+                };
+                const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `unilibrary-data-${new Date().toISOString().slice(0, 10)}.json`;
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+                URL.revokeObjectURL(url);
+            });
+
+            // --- Reset Demo Data ---
+            document.getElementById('resetDataBtn').addEventListener('click', () => {
+                if (!confirm('This clears everything you\'ve added on this device and restores the original sample books, students, and loans. Continue?')) return;
+                localStorage.setItem(LIB_KEYS.BOOKS, JSON.stringify(DEFAULT_BOOKS));
+                localStorage.setItem(LIB_KEYS.STUDENTS, JSON.stringify(DEFAULT_STUDENTS));
+                localStorage.setItem(LIB_KEYS.ISSUED, JSON.stringify(DEFAULT_ISSUED));
+                localStorage.setItem(LIB_KEYS.STATS, JSON.stringify(DEFAULT_STATS));
+                renderOverview();
+                alert('Demo data has been reset to defaults.');
+            });
+        });
+    </script>
+</body></html>
